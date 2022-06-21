@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.div`
     width: 100%;
     height: 60px;
-    background-color: #fff;
+    background-color: ${props => props.darkMode ? "#181818" : "#FFFFFF"};
+    color: ${props => props.darkMode ? "#FFFFFF" : "#0D0D0D"};
     @media (min-width: 1000px) {
         padding: 0 50px;
     }
@@ -11,6 +12,7 @@ export const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.5s;
     h2{
         @media (min-width: 1000px) {
             font-size: 25px;
@@ -32,13 +34,15 @@ export const HeaderContainer = styled.div`
         li{
             margin-left: 35px;
             a{
+                color: ${props => props.darkMode ? "#FFFFFF" : "#0D0D0D"};
                 display: flex;
                 align-items: center;
                 font-size: 17px;
                 cursor: pointer;
                 padding-bottom: 3px;
                 border-bottom: 2px solid transparent;
-                transition: border 0.3s;
+                text-decoration: none;
+                transition: border 0.3s, color 0.5s;
                 &:hover{
                     border-bottom: 2px solid #5CB9F2;
                     transition: border 0.3s;
@@ -63,9 +67,10 @@ export const HeaderContainer = styled.div`
                 position: absolute;
                 top: 30px;
                 right: 0px;
-                background-color: #FFF;
-                box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.2);
+                background-color: ${props => props.darkMode ? "#181818" : "#FFFFFF"};
+                box-shadow: 1px 1px 22px 2px ${props => props.darkMode ? "rgba(250,250,250,0.2)" : "rgba(0,0,0,0.2)"};
                 padding: 5px 0;
+                transition: all 0.5s;
                 li{
                     padding: 15px;
                     a{

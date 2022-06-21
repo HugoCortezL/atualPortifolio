@@ -17,7 +17,7 @@ export default function Presentation(props) {
     }, [props.language])
     
     return(
-        <PresentationContainer>
+        <PresentationContainer darkMode={props.darkMode} id="presentation">
             <div className='text'>
                 <p>
                     {languageUsage[1].presentation[0]}

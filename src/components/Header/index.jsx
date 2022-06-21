@@ -20,7 +20,7 @@ export default function Header(props) {
     const headerItems = 
         <ul className={showMobileMenu ? 'active' : ''}>
                     <li>
-                        <a>
+                        <a href="#presentation">
                             <AiOutlineHome size={20}/> <span>{languageUsage[0].header[0]}</span> 
                         </a>
                     </li>
@@ -51,7 +51,7 @@ export default function Header(props) {
                 </ul>
 
     return(
-        <HeaderContainer>
+        <HeaderContainer darkMode={props.darkMode}>
             <h2><span>Hugo</span> Cortez</h2>
             <nav className='web-menu'>
                 {headerItems}

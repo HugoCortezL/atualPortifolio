@@ -7,9 +7,11 @@ export default createGlobalStyle`
         outline: 0;
         box-sizing: border-box;
     }
+    html{
+        scroll-behavior: smooth;
+    }
     body{
         font-size: 13px;
-        background:  #F3F7F7;
         font-family: "Poppins", sans-serif;
         -webkit-font-smoothing: antialiased !important;
         -webkit-text-size-adjust: 100% !important;

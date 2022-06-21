@@ -1,10 +1,13 @@
 import {Container} from './styles'
 import Header from '../../components/Header'
 import Presentation from '../../components/Presentation'
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
+import {BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
 
 export default function Home() {
     const [languageUsage, setLanguageUsage] = useState("PT-BR")
+    const [darkMode, setDarkMode] = useState(false)
+    const [lightModeComponent, setLightModeComponent] = useState(<></>)
 
     function handlerLanguageChange(){
         if(languageUsage === 'PT-BR'){
@@ -13,12 +16,25 @@ export default function Home() {
             setLanguageUsage('PT-BR')
         }
     }
-    
+
+    useEffect(() => {
+        if(darkMode){
+            setLightModeComponent(
+            <button onClick={(() => setDarkMode(!darkMode))} className="dark-mode"><BsFillMoonFill size={25} color={"#FFF"}/></button>)
+        }else{
+            setLightModeComponent(
+            <button onClick={(() => setDarkMode(!darkMode))} className="dark-mode"><BsFillSunFill size={25} color={"#000"}/></button>)
+        }
+    }, [darkMode])
+
     return(
-        <Container>
-            <button onClick={handlerLanguageChange} className={`language-button ${languageUsage}`}> Language: <span>{languageUsage}</span></button>
-            <Header language={languageUsage}/>
-            <Presentation language={languageUsage}/>
+        <Container darkMode={darkMode}>
+            <div className="config">
+                {lightModeComponent}
+                <button onClick={handlerLanguageChange} className={`language-button ${languageUsage}`}> Language: <span>{languageUsage}</span></button>
+            </div>
+            <Header language={languageUsage} darkMode={darkMode}/>
+            <Presentation language={languageUsage}  darkMode={darkMode}/>
         </Container>
     )
 }
