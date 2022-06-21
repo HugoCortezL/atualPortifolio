@@ -1,8 +1,11 @@
 import {Container} from './styles'
-import Header from '../../components/Header'
-import Presentation from '../../components/Presentation'
 import {useEffect, useState} from 'react'
 import {BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
+
+import Header from '../../components/Header'
+import Presentation from '../../components/Presentation'
+import SocialMedias from '../../components/SocialMedias'
+
 
 export default function Home() {
     const [languageUsage, setLanguageUsage] = useState("PT-BR")
@@ -31,8 +34,9 @@ export default function Home() {
         <Container darkMode={darkMode}>
             <div className="config">
                 {lightModeComponent}
-                <button onClick={handlerLanguageChange} className={`language-button ${languageUsage}`}> Language: <span>{languageUsage}</span></button>
+                <button onClick={handlerLanguageChange} className={`language-button ${languageUsage}`}> {languageUsage == "PT-BR" ? "Idioma" : "Language"}: <span>{languageUsage}</span></button>
             </div>
+            <SocialMedias darkMode={darkMode}/>
             <Header language={languageUsage} darkMode={darkMode}/>
             <Presentation language={languageUsage}  darkMode={darkMode}/>
         </Container>

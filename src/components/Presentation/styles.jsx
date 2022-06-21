@@ -20,8 +20,8 @@ export const PresentationContainer = styled.div`
     div.text{
         p{
             color: ${props => props.darkMode ? "#F3F7F7" : "#0D0D0D"};
-            transition: all 0.5s;
             font-size: 30px;
+            transition: all 0.5s;
             &.my-name{
                 font-size: 45px;
                 font-weight: bold;
