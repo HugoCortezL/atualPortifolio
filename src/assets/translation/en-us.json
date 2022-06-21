@@ -7,5 +7,11 @@
             "Skills",
             "Contact"
         ]
+    },
+    {
+        "presentation": [
+            "Hello, I'm",
+            "Fullstack developer, based on Brazil."
+        ]
     }
 ]

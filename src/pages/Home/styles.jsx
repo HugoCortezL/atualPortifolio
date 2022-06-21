@@ -11,6 +11,7 @@ export const Container = styled.div`
         top: 70px;
         right: 10px;
         box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.3);
+        color: #5CB9F2;
         cursor: pointer;
         span{
             font-weight: bold;
