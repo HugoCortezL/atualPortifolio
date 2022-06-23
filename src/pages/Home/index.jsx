@@ -6,6 +6,7 @@ import Header from '../../components/Header'
 import Presentation from '../../components/Presentation'
 import Skills from '../../components/Skills'
 import SocialMedias from '../../components/SocialMedias'
+import Contact from '../../components/Contact'
 
 
 export default function Home() {
@@ -41,6 +42,7 @@ export default function Home() {
             <SocialMedias darkMode={darkMode}/>
             <Presentation language={languageUsage}  darkMode={darkMode}/>
             <Skills language={languageUsage}  darkMode={darkMode}/>
+            <Contact language={languageUsage}  darkMode={darkMode}/>
         </Container>
     )
 }

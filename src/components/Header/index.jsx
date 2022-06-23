@@ -44,7 +44,7 @@ export default function Header(props) {
                     </li>
                     <hr/>
                     <li>
-                        <a>
+                        <a href="#contact">
                             <AiOutlinePhone size={20}/> <span>{languageUsage[0].header[4]}</span>
                         </a>
                     </li>

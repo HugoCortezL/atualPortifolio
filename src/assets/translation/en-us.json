@@ -28,5 +28,14 @@
             "Empathy",
             "Creative Thinking"
         ]
+    },
+    {
+        "contact": [
+            "Subject",
+            "Name",
+            "Email",
+            "Message",
+            "Send"
+        ]
     }
 ]
