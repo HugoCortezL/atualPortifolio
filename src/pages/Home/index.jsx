@@ -4,6 +4,7 @@ import {BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
 
 import Header from '../../components/Header'
 import Presentation from '../../components/Presentation'
+import Skills from '../../components/Skills'
 import SocialMedias from '../../components/SocialMedias'
 
 
@@ -39,6 +40,7 @@ export default function Home() {
             <SocialMedias darkMode={darkMode}/>
             <Header language={languageUsage} darkMode={darkMode}/>
             <Presentation language={languageUsage}  darkMode={darkMode}/>
+            <Skills language={languageUsage}  darkMode={darkMode}/>
         </Container>
     )
 }

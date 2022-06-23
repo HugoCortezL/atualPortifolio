@@ -38,7 +38,7 @@ export default function Header(props) {
                     </li>
                     <hr/>
                     <li>
-                        <a>
+                        <a href="#skills">
                             <AiOutlineBarChart size={20}/> <span>{languageUsage[0].header[3]}</span>
                         </a>
                     </li>
