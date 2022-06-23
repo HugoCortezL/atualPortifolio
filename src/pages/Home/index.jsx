@@ -37,8 +37,8 @@ export default function Home() {
                 {lightModeComponent}
                 <button onClick={handlerLanguageChange} className={`language-button ${languageUsage}`}> {languageUsage == "PT-BR" ? "Idioma" : "Language"}: <span>{languageUsage}</span></button>
             </div>
-            <SocialMedias darkMode={darkMode}/>
             <Header language={languageUsage} darkMode={darkMode}/>
+            <SocialMedias darkMode={darkMode}/>
             <Presentation language={languageUsage}  darkMode={darkMode}/>
             <Skills language={languageUsage}  darkMode={darkMode}/>
         </Container>

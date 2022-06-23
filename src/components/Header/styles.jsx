@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
     color: ${props => props.darkMode ? "#FFFFFF" : "#0D0D0D"};
     @media (min-width: 1000px) {
         padding: 0 50px;
+        position: fixed;
     }
     padding: 0 20px;
     display: flex;
@@ -54,6 +55,7 @@ export const HeaderContainer = styled.div`
         }
     }
     nav.mobile-menu{
+        z-index: 1000;
         @media (min-width: 1000px) {
             display: none !important;
         }

@@ -12,6 +12,7 @@ export const SocialMediasContainer = styled.div`
         position: absolute;
         right: 10px;
         top: 70px;
+        z-index: 100;
     }
     a{
         width: 50px;

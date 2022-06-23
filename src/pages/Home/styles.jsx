@@ -10,6 +10,9 @@ export const Container = styled.div`
         align-items: center;
         justify-content: flex-end;
         position: absolute;
+        @media (min-width: 1000px) {
+            position: fixed;
+        }
         top: 70px;
     }
     button.language-button{
