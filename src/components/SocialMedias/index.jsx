@@ -1,5 +1,5 @@
 import {SocialMediasContainer} from './styles'
-import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import {AiFillLinkedin, AiFillGithub, AiFillMediumCircle} from 'react-icons/ai'
 
 export default function SocialMedias(props) {
     
@@ -10,6 +10,9 @@ export default function SocialMedias(props) {
             </a>
             <a href="https://github.com/HugoCortezL?tab=repositories" target="_blank">
                 <AiFillGithub size={35} className="github-icon"/>
+            </a>
+            <a href="https://github.com/HugoCortezL?tab=repositories" target="_blank">
+                <AiFillMediumCircle size={35} className="medium-icon"/>
             </a>
         </SocialMediasContainer>
     )

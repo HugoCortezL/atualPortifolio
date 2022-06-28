@@ -22,7 +22,7 @@ export const SocialMediasContainer = styled.div`
         align-items: center;
         justify-content: center;
         box-shadow: 1px 1px 3px 2px ${props => props.darkMode ? "rgba(250,250,250,0.2)" : "rgba(0,0,0,0.2)"};
-        background-color: ${props => props.darkMode ? "#0D0D0D" : "#F3F7F7"};
+        background-color: transparent;
         transition: all 0.5s;
         @media (min-width: 1100px) {
             margin-bottom: 10px;
@@ -32,6 +32,10 @@ export const SocialMediasContainer = styled.div`
         }
         *{
             &.github-icon{
+                color: ${props => props.darkMode ? "#F3F7F7" : "#0D0D0D"};
+                transition: all 0.5s;
+            }
+            &.medium-icon{
                 color: ${props => props.darkMode ? "#F3F7F7" : "#0D0D0D"};
                 transition: all 0.5s;
             }
