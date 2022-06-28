@@ -10,6 +10,7 @@ import typescriptLogo from '../../assets/images/typescript-logo.png'
 import reactLogo from '../../assets/images/react-logo.png'
 import pythonLogo from '../../assets/images/python-logo.png'
 import nodeLogo from '../../assets/images/node-logo.png'
+import gitLogo from '../../assets/images/git-logo.png'
 import graphqlLogo from '../../assets/images/graphql-logo.png'
 import mysqlLogo from '../../assets/images/mysql-logo.png'
 import euaFlag from '../../assets/images/eua-flag.png'
@@ -71,6 +72,9 @@ export default function Skills(props) {
                         </SkillContainer>
                         <SkillContainer text="GraphQL" count={2.4} darkMode={props.darkMode}>
                             <img src={graphqlLogo} />
+                        </SkillContainer>
+                        <SkillContainer text="Git/GitHub" count={3.5} darkMode={props.darkMode}>
+                            <img src={gitLogo} />
                         </SkillContainer>
                         <SkillContainer text="MySQL" count={3} darkMode={props.darkMode}>
                             <img src={mysqlLogo} />
