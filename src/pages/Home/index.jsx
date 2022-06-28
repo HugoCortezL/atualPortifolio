@@ -1,6 +1,7 @@
 import {Container} from './styles'
 import {useEffect, useState} from 'react'
 import {BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
+import {AiOutlineArrowUp} from 'react-icons/ai'
 
 import Header from '../../components/Header'
 import Presentation from '../../components/Presentation'
@@ -34,6 +35,7 @@ export default function Home() {
 
     return(
         <Container darkMode={darkMode}>
+            <span id="top"></span>
             <div className="config">
                 {lightModeComponent}
                 <button onClick={handlerLanguageChange} className={`language-button ${languageUsage}`}> {languageUsage == "PT-BR" ? "Idioma" : "Language"}: <span>{languageUsage}</span></button>
@@ -43,6 +45,11 @@ export default function Home() {
             <Presentation language={languageUsage}  darkMode={darkMode}/>
             <Skills language={languageUsage}  darkMode={darkMode}/>
             <Contact language={languageUsage}  darkMode={darkMode}/>
+            <div className="go-top">
+                <a href="#top">
+                    <AiOutlineArrowUp size={35}/>
+                </a>
+            </div>
         </Container>
     )
 }

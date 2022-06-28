@@ -15,6 +15,27 @@ export const Container = styled.div`
         }
         top: 70px;
     }
+    div.go-top{
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 2px 1px ${props => props.darkMode ? "rgba(250,250,250,0.2)" : "rgba(0,0,0,0.2)"};
+        @media (min-width: 1000px) {
+            display: inline-block;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: ${props => props.darkMode ? "#F3F7F7" : "#0D0D0D"};
+            
+        }
+    }
     button.language-button{
         background: transparent;
         padding: 5px;

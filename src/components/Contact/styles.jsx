@@ -61,7 +61,7 @@ export const ContactContainer = styled.div`
                 width: 60vw;
                 height: 35px;
                 background-color: #5CB9F2;
-                color: ${props => props.darkMode ? "#F3F7F7" : "#0D0D0D"};;
+                color: ${props => props.darkMode ? "#F3F7F7" : "#0D0D0D"};
                 border: none;
                 border-radius: 20px;
                 font-weight: bold;
