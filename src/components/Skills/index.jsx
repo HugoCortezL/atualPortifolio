@@ -75,10 +75,10 @@ export default function Skills(props) {
                         <SkillContainer text="MySQL" count={3} darkMode={props.darkMode}>
                             <img src={mysqlLogo} />
                         </SkillContainer>
-                        <SkillContainer text={languageUsage[2].skills[1]} count={4} darkMode={props.darkMode}>
+                        <SkillContainer text={languageUsage[2].skills[1]} count={3.5} darkMode={props.darkMode}>
                             <img src={euaFlag} className="flag" />
                         </SkillContainer>
-                        <SkillContainer text={languageUsage[2].skills[2]} count={3.5} darkMode={props.darkMode}>
+                        <SkillContainer text={languageUsage[2].skills[2]} count={3} darkMode={props.darkMode}>
                             <img src={spainFlag} className="flag" />
                         </SkillContainer>
                         <SkillContainer text={languageUsage[2].skills[3]} count={5} darkMode={props.darkMode}>
