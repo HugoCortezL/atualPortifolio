@@ -5,20 +5,24 @@ import enUsWords from '../../assets/translation/en-us.json'
 
 export default function Contact(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
-    
+    const [downloadLink, setDownloadLink] = useState("https://drive.google.com/file/d/1jLua_EmrXwM211fJ-Y-uzdO8wi077Fng/view?usp=sharing")
+
     useEffect(() => {
         if(props.language === 'PT-BR'){
             setLanguageUsage(ptBrWords)
+            setDownloadLink("https://drive.google.com/file/d/1jLua_EmrXwM211fJ-Y-uzdO8wi077Fng/view?usp=sharing")
         }else{
             setLanguageUsage(enUsWords)
+            setDownloadLink("https://drive.google.com/file/d/1S4RbZK5H-ScnAlnaZgYbL2TGLf6oNSsL/view?usp=sharing")
         }
     }, [props.language])
+
     
     return(
         <AboutMeContainer darkMode={props.darkMode} id="about-me">
             <div className='header'>
                 <h2>{languageUsage[4].aboutMe[0]}</h2>
-                <a href="">Download CV</a>
+                <a href={downloadLink}>Download CV</a>
             </div>
             <div className='about'>
                 <p>
