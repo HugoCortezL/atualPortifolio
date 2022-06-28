@@ -22,7 +22,7 @@ export default function Contact(props) {
         <AboutMeContainer darkMode={props.darkMode} id="about-me">
             <div className='header'>
                 <h2>{languageUsage[4].aboutMe[0]}</h2>
-                <a href={downloadLink}>Download CV</a>
+                <a href={downloadLink} target="_blank">Download CV</a>
             </div>
             <div className='about'>
                 <p>
