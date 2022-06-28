@@ -31,11 +31,12 @@
     },
     {
         "contact": [
-            "Assunto",
+            "Contato",
             "Nome",
             "Email",
+            "Assunto",
             "Menssagem",
-            "Enviar"
+            "Enviar"            
         ]
     }
         

@@ -32,11 +32,8 @@ export default function Contact(props) {
 
     return(
         <ContactContainer darkMode={props.darkMode} id="contact">
+            <h2>{languageUsage[3].contact[0]}</h2>
             <form ref={form} onSubmit={sendEmail}>
-                <div>
-                    <label>{languageUsage[3].contact[0]}</label>
-                    <input type="text" name="subject"/>
-                </div>
                 <div>
                     <label>{languageUsage[3].contact[1]}</label>
                     <input type="text"name="name"/>
@@ -47,10 +44,14 @@ export default function Contact(props) {
                 </div>
                 <div>
                     <label>{languageUsage[3].contact[3]}</label>
-                    <input type="text" name="message"/>
+                    <input type="text" name="subject"/>
+                </div>
+                <div>
+                    <label>{languageUsage[3].contact[4]}</label>
+                    <textarea type="text" name="message"/>
                 </div>
                 <div className='submit'>
-                    <input type="submit" value={languageUsage[3].contact[4]}/>
+                    <input type="submit" value={languageUsage[3].contact[5]}/>
                 </div>
             </form>
         </ContactContainer>

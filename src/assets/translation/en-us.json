@@ -31,9 +31,10 @@
     },
     {
         "contact": [
-            "Subject",
+            "Contact",
             "Name",
             "Email",
+            "Subject",
             "Message",
             "Send"
         ]
