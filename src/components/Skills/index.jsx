@@ -76,13 +76,13 @@ export default function Skills(props) {
                             <img src={mysqlLogo} />
                         </SkillContainer>
                         <SkillContainer text={languageUsage[2].skills[1]} count={4} darkMode={props.darkMode}>
-                            <img src={euaFlag} />
+                            <img src={euaFlag} className="flag" />
                         </SkillContainer>
                         <SkillContainer text={languageUsage[2].skills[2]} count={3.5} darkMode={props.darkMode}>
-                            <img src={spainFlag} />
+                            <img src={spainFlag} className="flag" />
                         </SkillContainer>
                         <SkillContainer text={languageUsage[2].skills[3]} count={5} darkMode={props.darkMode}>
-                            <img src={brazilFlag} />
+                            <img src={brazilFlag} className="flag" />
                         </SkillContainer>
                     </div>
                     <div className={`skill soft-skill-content ${skillActive === 'soft' ? "active" : ""} `} >

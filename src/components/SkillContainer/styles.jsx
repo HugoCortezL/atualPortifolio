@@ -14,11 +14,18 @@ export const Skill = styled.div`
     padding: 10px 15px ;
     margin: 10px;
     p{
-        font-size: 25px;
+        font-size: 15px;
+        @media (min-width: 680px) {
+            font-size: 25px;
+        }
         text-align: center;
     }
     img{
         width: 8vw;
         height: 8vw;
+        &.flag{
+            border-radius: 10px;
+            overflow: hidden;
+        }
     }
 `

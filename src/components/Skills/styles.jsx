@@ -18,7 +18,11 @@ export const Content = styled.div`
         & div{
             background-color: ${props => props.darkMode ? "#1e1e1e" : "#f9fbfb"};
             padding: 10px 0;
-            font-size: 20px;
+            @media (min-width: 680px) {
+                font-size: 20px;
+            }
+            font-size: 15px;
+            cursor: pointer;
             &.active{
                 background-color: ${props => props.darkMode ? "#242424" : "#FFFFFF"};
                 box-shadow: 0 4px 10px 0 ${props => props.darkMode ? "rgba(250, 250, 250, 0.2)" : "rgba(0, 0, 0, 0.2)"};
@@ -33,10 +37,16 @@ export const Content = styled.div`
             margin-top: 20px;
             &.active{
                 display: grid;
-                grid-template-columns: repeat(auto-fit, 300px);
+                @media (min-width: 1200px) {
+                    grid-template-columns: repeat(auto-fit, 19vw);
+                }
+                @media (min-width: 680px) {
+                    grid-template-columns: repeat(auto-fit, 25vw);
+                }
+                grid-template-columns: repeat(auto-fit, 36vw);
                 background-color: ${props => props.darkMode ? "#242424" : "#f7f7f7"};
                 border-radius: 5px;
-                height: 550px;
+                height: 65vh;
                 overflow-y: scroll;
                 ::-webkit-scrollbar {
                     width: 10px;
