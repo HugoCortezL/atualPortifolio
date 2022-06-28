@@ -32,6 +32,7 @@ export const Container = styled.div`
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            margin-top: 2px;
             color: ${props => props.darkMode ? "#F3F7F7" : "#0D0D0D"};
             
         }
