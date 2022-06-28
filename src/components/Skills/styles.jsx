@@ -7,6 +7,7 @@ export const SkillsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s !important;
 `
 
 export const Content = styled.div`
@@ -18,6 +19,7 @@ export const Content = styled.div`
         & div{
             background-color: ${props => props.darkMode ? "#1e1e1e" : "#f9fbfb"};
             padding: 10px 0;
+            transition: background-color 0.5s, box-shadow 0.5s;
             @media (min-width: 680px) {
                 font-size: 20px;
             }
@@ -27,8 +29,6 @@ export const Content = styled.div`
                 background-color: ${props => props.darkMode ? "#242424" : "#FFFFFF"};
                 box-shadow: 0 4px 10px 0 ${props => props.darkMode ? "rgba(250, 250, 250, 0.2)" : "rgba(0, 0, 0, 0.2)"};
             }
-        }
-        h2{
         }
     }
     div.content{
@@ -48,6 +48,7 @@ export const Content = styled.div`
                 border-radius: 5px;
                 height: 65vh;
                 overflow-y: scroll;
+                transition: background-color 0.5s;
                 ::-webkit-scrollbar {
                     width: 10px;
                 }

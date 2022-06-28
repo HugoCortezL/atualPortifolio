@@ -10,6 +10,7 @@ export const ContactContainer = styled.div`
     h2{
         font-size: 30px;
         margin-bottom: 10px;
+        transition: all 0.5s;
     }
     form{
         width: 70vw;
@@ -20,6 +21,7 @@ export const ContactContainer = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transition: all 0.5s;
         div{
             display: flex;
             flex-direction: column;
@@ -36,6 +38,7 @@ export const ContactContainer = styled.div`
                 border-radius: 5px;
                 background-color: transparent;
                 width: 60vw;
+                transition: all 0.5s;
                 @media (min-width: 1000px) {
                     width: 30vw;
                 }
@@ -66,6 +69,7 @@ export const ContactContainer = styled.div`
                 border-radius: 20px;
                 font-weight: bold;
                 font-size: 15px;
+                transition: all 0.5s;
                 &:hover{
                     background-color: ${props => props.darkMode ? "#AADEFD" : "#2473A4"};
                     color: ${props => props.darkMode ? "#0D0D0D" : "#F3F7F7"};
