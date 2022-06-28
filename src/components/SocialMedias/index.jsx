@@ -11,7 +11,7 @@ export default function SocialMedias(props) {
             <a href="https://github.com/HugoCortezL?tab=repositories" target="_blank">
                 <AiFillGithub size={35} className="github-icon"/>
             </a>
-            <a href="https://github.com/HugoCortezL?tab=repositories" target="_blank">
+            <a href="https://medium.com/@hugocortez" target="_blank">
                 <AiFillMediumCircle size={35} className="medium-icon"/>
             </a>
         </SocialMediasContainer>
