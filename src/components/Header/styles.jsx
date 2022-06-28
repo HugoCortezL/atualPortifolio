@@ -22,9 +22,15 @@ export const HeaderContainer = styled.div`
             color: #5CB9F2;
         }
     }
+    nav ul{
+        list-style: none;
+        li a{
+            text-decoration: none;
+            color: ${props => props.darkMode ? "#FFFFFF" : "#0D0D0D"};
+        }
+    }
     nav.web-menu ul{
         display: none;
-        list-style: none;
         @media (min-width: 1000px) {
             display: flex;
             align-items: center;
@@ -35,14 +41,12 @@ export const HeaderContainer = styled.div`
         li{
             margin-left: 35px;
             a{
-                color: ${props => props.darkMode ? "#FFFFFF" : "#0D0D0D"};
                 display: flex;
                 align-items: center;
                 font-size: 17px;
                 cursor: pointer;
                 padding-bottom: 3px;
                 border-bottom: 2px solid transparent;
-                text-decoration: none;
                 transition: border 0.3s, color 0.5s;
                 &:hover{
                     border-bottom: 2px solid #5CB9F2;
