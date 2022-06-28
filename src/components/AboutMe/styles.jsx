@@ -10,7 +10,7 @@ export const AboutMeContainer = styled.div`
     align-items: center;
     justify-content: center;
     & > div{
-        width: 70vw;
+        width: 50vw;
         text-align: center;
         &.header{
             display: flex;
@@ -38,12 +38,25 @@ export const AboutMeContainer = styled.div`
                 justify-content: center;
             }
         }
+        &.based{
+            margin-top: 50px;
+            font-size: 15px;
+            a{
+                text-decoration: none;
+                color: #5CB9F2
+            }
+        }
     }
 `
 
 export const HobbieContainer = styled.div`
+    font-size: 15px;
     display: flex;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
     margin: 10px;
-    border: 1px solid red;
+    background: ${props => props.darkMode ? "linear-gradient(145deg, #161616, #1a1a1a)" : "linear-gradient(145deg, #e6e6e6, #ffffff)"};
+    box-shadow:  ${props => props.darkMode ? "5px 5px 7px #141414, -5px -5px 7px #1c1c1c" : "5px 5px 10px #d4d4d4, -5px -5px 10px #ffffff"};
+    transition: all 0.5s;
+    cursor: default;
 `

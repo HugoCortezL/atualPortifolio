@@ -28,29 +28,29 @@ export default function Contact(props) {
             <div className='hobbies'>
                 <h3>Hobbies</h3>
                 <div>
-                    <HobbieContainer>
+                    <HobbieContainer  darkMode={props.darkMode}>
                         {languageUsage[4].aboutMe[2]}
                     </HobbieContainer>
-                    <HobbieContainer>
+                    <HobbieContainer darkMode={props.darkMode}>
                         {languageUsage[4].aboutMe[3]}
                     </HobbieContainer>
-                    <HobbieContainer>
+                    <HobbieContainer darkMode={props.darkMode}>
                         {languageUsage[4].aboutMe[4]}
                     </HobbieContainer>
-                    <HobbieContainer>
+                    <HobbieContainer darkMode={props.darkMode}>
                         {languageUsage[4].aboutMe[5]}
                     </HobbieContainer>
-                    <HobbieContainer>
+                    <HobbieContainer darkMode={props.darkMode}>
                         {languageUsage[4].aboutMe[6]}
                     </HobbieContainer>
-                    <HobbieContainer>
+                    <HobbieContainer darkMode={props.darkMode}>
                         {languageUsage[4].aboutMe[7]}
                     </HobbieContainer>
                 </div>
             </div>
             <div className='based'>
                 {languageUsage[4].aboutMe[8]}
-                <a href="">Recife, PE - {languageUsage[4].aboutMe[9]}</a>
+                <a href="https://www.google.com/maps/place/Recife/" target="_blank">Recife, PE - {languageUsage[4].aboutMe[9]}</a>
             </div>
 
         </AboutMeContainer>
