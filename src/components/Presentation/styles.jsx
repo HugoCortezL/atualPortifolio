@@ -35,22 +35,25 @@ export const PresentationContainer = styled.div`
             }
         }
         button{
-            display: flex;
-            align-items: center;
-            font-size: 20px;
             padding: 10px 15px;
             cursor: pointer;
-            transition: padding 0.5s;
+            transition: padding 0.3s;
             background-color: #2C5773;
-            color: #FFFFFF;
             border: none;
             border-radius: 5px;
+            a{
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
             span{
                 margin-left: 10px;
             }
             &:hover{
                 padding: 10px 40px;
-                transition: padding 0.5s;
+                transition: padding 0.3s;
             }
         }
     }

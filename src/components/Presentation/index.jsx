@@ -29,7 +29,9 @@ export default function Presentation(props) {
                 {languageUsage[1].presentation[1]}
                 </p>
                 <button>
-                    <AiOutlineArrowDown size={30}/> <span>{languageUsage[0].header[1]}</span>
+                    <a href="#about-me">
+                        <AiOutlineArrowDown size={30}/> <span>{languageUsage[0].header[1]}</span>
+                    </a>
                 </button>
             </div>
             <div className='image'>

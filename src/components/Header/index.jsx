@@ -26,7 +26,7 @@ export default function Header(props) {
                     </li>
                     <hr/>
                     <li>
-                        <a>
+                        <a href="#about-me">
                             <AiOutlineUser size={20}/> <span>{languageUsage[0].header[1]}</span>
                         </a>
                     </li>
