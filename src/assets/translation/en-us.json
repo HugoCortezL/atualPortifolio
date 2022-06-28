@@ -38,5 +38,19 @@
             "Message",
             "Send"
         ]
+    },
+    {
+        "aboutMe": [
+            "About me",
+            "Hello, welcome to my website. I am a software developer and an eternal programming student. Currently I focus my studies on React, Nodejs, MySQL and GraphQL. I have more than a year working in software development. I am always looking for new challenges to evolve personally and professionally.",
+            "Guitar",
+            "Football",
+            "Study",
+            "Cook",
+            "Movies / Shows",
+            "Friends / Family",
+            "Based on: ",
+            "Brazil"
+        ]
     }
 ]

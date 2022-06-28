@@ -38,6 +38,20 @@
             "Menssagem",
             "Enviar"            
         ]
+    },
+    {
+        "aboutMe": [
+            "Sobre Mim",
+            "Olá, bem vindo(a) ao meu site. Sou desenvolvedor de software e um eterno estudande de programação. Atualmente foco meus estudos em React, Nodejs, MySQL e GraphQL. Tenho mais de um ano atuando em desenvolvimento de software. Estou sempre buscando novos desafios para evoluir pessoalmente e profissionalmente.",
+            "Violao",
+            "Futebol",
+            "Estudar",
+            "Cozinhar",
+            "Filmes / Series",
+            "Amigos / Família",
+            "Morando: ",
+            "Brasil"
+        ]
     }
         
 ]
