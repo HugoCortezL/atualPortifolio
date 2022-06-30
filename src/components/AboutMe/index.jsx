@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 import ptBrWords from '../../assets/translation/pt-br.json'
 import enUsWords from '../../assets/translation/en-us.json'
 
-export default function Contact(props) {
+export default function AboutMe(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
     const [downloadLink, setDownloadLink] = useState("https://drive.google.com/file/d/1jLua_EmrXwM211fJ-Y-uzdO8wi077Fng/view?usp=sharing")
 

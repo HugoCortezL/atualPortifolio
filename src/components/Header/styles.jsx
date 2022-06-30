@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.div`
     width: 100%;
     height: 60px;
+    z-index: 1000;
     background-color: ${props => props.darkMode ? "#181818" : "#FFFFFF"};
     color: ${props => props.darkMode ? "#FFFFFF" : "#0D0D0D"};
     @media (min-width: 1000px) {

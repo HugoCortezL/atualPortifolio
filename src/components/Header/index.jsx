@@ -32,7 +32,7 @@ export default function Header(props) {
                     </li>
                     <hr/>
                     <li>
-                        <a>
+                        <a href="#projects">
                             <AiOutlineBulb size={20}/> <span>{languageUsage[0].header[2]}</span>
                         </a>
                     </li>

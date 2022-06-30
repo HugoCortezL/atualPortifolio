@@ -52,6 +52,78 @@
             "Morando: ",
             "Brasil"
         ]
+    },
+    {
+        "projects": [
+            "Projetos",
+            {
+                "Items": [
+                    {
+                        "key": 0,
+                        "src": "./src/assets/images/hackerhank-clone-image.png",
+                        "name": "Clone do hackerhank",
+                        "description": "Nesse projeto decidi fazer um clone do frontend da parte de login do hackerhank",
+                        "used": "Tecnologias utilizadas",
+                        "tech": [
+                            {
+                                "id": 0,
+                                "name": "Javascript"
+                            },
+                            {
+                                "id": 1,
+                                "name": "React"
+                            }
+                        ]
+                    },
+                    {
+                        "key": 1,
+                        "src": "./src/assets/images/eua-flag.png",
+                        "name": "Sistema de chat",
+                        "description": "Nesse projeto fiz um sistema de chat em tempo real para mostrar um pouco de minhas habilidades",
+                        "used": "Tecnologias utilizadas",
+                        "tech": [
+                            {
+                                "id": 0,
+                                "name": "React"
+                            },
+                            {
+                                "id": 1,
+                                "name": "Firebase"
+                            },
+                            {
+                                "id": 2,
+                                "name": "GraphQL"
+                            },
+                            {
+                                "id": 3,
+                                "name": "NodeJs"
+                            }
+                        ]
+                    },
+                    {
+                        "key": 2,
+                        "src": "./src/assets/images/spain-flag.png",
+                        "name": "Sistema de reservas",
+                        "description": "Nesse projeto fiz um sistema para que hoteis possam utilizar para ter um sistema onde consiga controlar as reservas",
+                        "used": "Tecnologias utilizadas",
+                        "tech": [
+                            {
+                                "id": 0,
+                                "name": "React"
+                            },
+                            {
+                                "id": 1,
+                                "name": "NodeJs"
+                            },
+                            {
+                                "id": 2,
+                                "name": "MySQL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
         
 ]

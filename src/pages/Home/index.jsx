@@ -9,6 +9,7 @@ import Skills from '../../components/Skills'
 import SocialMedias from '../../components/SocialMedias'
 import Contact from '../../components/Contact'
 import AboutMe from '../../components/AboutMe'
+import Projects from '../../components/Projects'
 
 
 export default function Home() {
@@ -45,6 +46,7 @@ export default function Home() {
             <Header language={languageUsage} darkMode={darkMode}/>
             <Presentation language={languageUsage}  darkMode={darkMode}/>
             <AboutMe language={languageUsage}  darkMode={darkMode}/>
+            <Projects language={languageUsage}  darkMode={darkMode}/>
             <Skills language={languageUsage}  darkMode={darkMode}/>
             <Contact language={languageUsage}  darkMode={darkMode}/>
             <div className="go-top">

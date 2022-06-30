@@ -10,10 +10,11 @@ export const Container = styled.div`
         align-items: center;
         justify-content: flex-end;
         position: absolute;
+        top: 70px;
+        z-index: 1000;
         @media (min-width: 1000px) {
             position: fixed;
         }
-        top: 70px;
     }
     div.go-top{
         display: none;
