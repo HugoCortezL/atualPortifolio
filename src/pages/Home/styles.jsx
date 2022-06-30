@@ -15,6 +15,9 @@ export const Container = styled.div`
         @media (min-width: 1000px) {
             position: fixed;
         }
+        button.language-button{
+            background: ${props => props.darkMode ? "#0D0D0D" : "#F3F7F7"};
+        }
     }
     div.go-top{
         display: none;
