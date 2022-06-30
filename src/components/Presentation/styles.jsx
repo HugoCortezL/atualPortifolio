@@ -63,6 +63,7 @@ export const PresentationContainer = styled.div`
             display: inline-block;
             border-radius: 50px;
             overflow: hidden;
+            max-height: 90vh;
         }
     }
 `
