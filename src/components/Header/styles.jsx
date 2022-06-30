@@ -15,6 +15,7 @@ export const HeaderContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     transition: all 0.5s;
+    box-shadow: 0px 1px 5px 1px ${props => props.darkMode ? "rgba(250,250,250,0.2)" : "rgba(0,0,0,0.2)"};
     h2{
         @media (min-width: 1000px) {
             font-size: 25px;
