@@ -108,7 +108,6 @@ export default function Carousel(props) {
         setItemToShow(0)
     }, [])
 
-    console.log(items)
 
     return(
         <CarouselContainer darkMode={props.darkMode}>

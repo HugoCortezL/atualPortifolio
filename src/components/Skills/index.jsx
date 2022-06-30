@@ -1,8 +1,9 @@
-import {SkillsContainer, Content} from './styles'
+import {SkillsContainer, Content, HorizontalCarousel, SkillsCarousel, Skill} from './styles'
 import {useState, useEffect} from 'react'
 import ptBrWords from '../../assets/translation/pt-br.json'
 import enUsWords from '../../assets/translation/en-us.json'
-import SkillContainer from '../SkillContainer'
+import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
+import ProgressBar from '../ProgressBar'
 
 import htmlLogo from '../../assets/images/html-logo.png'
 import cssLogo from '../../assets/images/css-logo.png'
@@ -21,7 +22,7 @@ import brazilFlag from '../../assets/images/brazil-flag.png'
 
 export default function Skills(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
-    const [skillActive, setSkillActive] = useState("hard")
+    const [trasnlateHardSkills, setTranslateHardSkills] = useState(0)
 
     useEffect(() => {
         if(props.language === 'PT-BR'){
@@ -31,85 +32,44 @@ export default function Skills(props) {
         }
     }, [props.language])
 
-    function handleSkillChange(skills){
-        setSkillActive(skills)
+    const hardSkillsForRight = () => {
+        document.getElementById('hardSkills').scrollLeft += 1000
+    }
+
+    const hardSkillsForLeft = () => {
+        document.getElementById('hardSkills').scrollLeft -= 1000
     }
 
     return(
         <SkillsContainer darkMode={props.darkMode} id="skills">
-            <Content darkMode={props.darkMode}>
-                <div className="header">
-                    <div onClick={() => handleSkillChange("hard")} className={skillActive === 'hard' ? "active" : ""}>
-                        <h2>
-                            {languageUsage[2].skills[0]}
-                        </h2>
-                    </div>
-                    <div onClick={() => handleSkillChange("soft")} className={skillActive === 'soft' ? "active" : ""}>
-                        <h2 >
-                            {languageUsage[2].skills[4]}
-                        </h2>
-                    </div>
-                </div>
-                <div className='content'>
-                    <div className={`skill hard-skill-content ${skillActive === 'hard' ? "active" : ""}`}>
-                        <SkillContainer text="HTML" count={4.7} darkMode={props.darkMode}>
-                            <img src={htmlLogo} />
-                        </SkillContainer>
-                        <SkillContainer text="CSS" count={4.2} darkMode={props.darkMode}>
-                            <img src={cssLogo} />
-                        </SkillContainer>
-                        <SkillContainer text="Typescript" count={3.4} darkMode={props.darkMode}>
-                            <img src={typescriptLogo} />
-                        </SkillContainer>
-                        <SkillContainer text="React" count={3.8} darkMode={props.darkMode}>
-                            <img src={reactLogo} />
-                        </SkillContainer>
-                        <SkillContainer text="Python" count={4} darkMode={props.darkMode}>
-                            <img src={pythonLogo} />
-                        </SkillContainer>
-                        <SkillContainer text="Node.js" count={3.2} darkMode={props.darkMode}>
-                            <img src={nodeLogo} />
-                        </SkillContainer>
-                        <SkillContainer text="GraphQL" count={2.4} darkMode={props.darkMode}>
-                            <img src={graphqlLogo} />
-                        </SkillContainer>
-                        <SkillContainer text="Git/GitHub" count={3.5} darkMode={props.darkMode}>
-                            <img src={gitLogo} />
-                        </SkillContainer>
-                        <SkillContainer text="MySQL" count={3} darkMode={props.darkMode}>
-                            <img src={mysqlLogo} />
-                        </SkillContainer>
-                        <SkillContainer text={languageUsage[2].skills[1]} count={3.5} darkMode={props.darkMode}>
-                            <img src={euaFlag} className="flag" />
-                        </SkillContainer>
-                        <SkillContainer text={languageUsage[2].skills[2]} count={3} darkMode={props.darkMode}>
-                            <img src={spainFlag} className="flag" />
-                        </SkillContainer>
-                        <SkillContainer text={languageUsage[2].skills[3]} count={5} darkMode={props.darkMode}>
-                            <img src={brazilFlag} className="flag" />
-                        </SkillContainer>
-                    </div>
-                    <div className={`skill soft-skill-content ${skillActive === 'soft' ? "active" : ""} `} >
-                    <SkillContainer text={languageUsage[2].skills[5]} count={4.3} darkMode={props.darkMode}>
-                        <img src={brazilFlag} />
-                    </SkillContainer>
-                    <SkillContainer text={languageUsage[2].skills[6]} count={4.5} darkMode={props.darkMode}>
-                        <img src={brazilFlag} />
-                    </SkillContainer>
-                    <SkillContainer text={languageUsage[2].skills[7]} count={5} darkMode={props.darkMode}>
-                        <img src={brazilFlag} />
-                    </SkillContainer>
-                    <SkillContainer text={languageUsage[2].skills[8]} count={5} darkMode={props.darkMode}>
-                        <img src={brazilFlag} />
-                    </SkillContainer>
-                    <SkillContainer text={languageUsage[2].skills[9]} count={5} darkMode={props.darkMode}>
-                        <img src={brazilFlag} />
-                    </SkillContainer>
-                    <SkillContainer text={languageUsage[2].skills[10]} count={5} darkMode={props.darkMode}>
-                        <img src={brazilFlag} />
-                    </SkillContainer>
-                    </div>
-                </div>
+            <Content>
+                <HorizontalCarousel>
+                    <h2>Hard Skills</h2>
+                    <SkillsCarousel darkMode={props.darkMode}>
+                        <div className='options'>
+                            <button className="left" onClick={hardSkillsForLeft}>
+                                <BsChevronLeft size={30} color={props.darkMode ? "#F3F7F7" : "#181818"}/>
+                            </button>
+                            <button className="right" onClick={hardSkillsForRight}>
+                                <BsChevronRight size={30} color={props.darkMode ? "#F3F7F7" : "#181818"}/>
+                            </button>
+                        </div>
+                        <div className='skills-container'>
+                            <div id='hardSkills'>
+                                {
+                                    languageUsage[2].skills[1].hardSkills.map(skill => <Skill darkMode={props.darkMode} key={skill.id}>
+                                        <p>{skill.name}</p>
+                                        <img src={skill.src}/>
+                                        <ProgressBar color={skill.color} percent={skill.score}/>
+                                    </Skill>)
+                                }
+                            </div>
+                        </div>
+                    </SkillsCarousel>
+                </HorizontalCarousel>
+                <HorizontalCarousel>
+                    <h2>{languageUsage[2].skills[0]}</h2>
+                </HorizontalCarousel>
             </Content>
         </SkillsContainer>
     )

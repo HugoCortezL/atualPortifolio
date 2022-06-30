@@ -21,11 +21,6 @@ export default function Contact(props) {
         e.preventDefault();
     
         emailjs.sendForm('gmail_Hugo062000', 'template_1he1nwv', form.current, 'BRYC9dQHN41ka62US')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
             
         form.current.reset()
     };
