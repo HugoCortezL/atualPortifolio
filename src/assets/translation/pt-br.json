@@ -5,7 +5,7 @@
             "Sobre mim",
             "Projetos",
             "Habilidades",
-            "Contato"
+            "Fale comigo"
         ]
     },
     {
@@ -155,7 +155,7 @@
     },
     {
         "contact": [
-            "Contato",
+            "Fale comigo",
             "Nome",
             "Email",
             "Assunto",
@@ -187,7 +187,7 @@
                         "src": "./src/assets/images/hackerhank-clone-image.png",
                         "name": "Clone do hackerhank",
                         "description": "Nesse projeto decidi fazer um clone do frontend da parte de login do hackerhank",
-                        "used": "Tecnologias utilizadas",
+                        "used": "Tecnologias",
                         "tech": [
                             {
                                 "id": 0,
@@ -204,7 +204,7 @@
                         "src": "./src/assets/images/eua-flag.png",
                         "name": "Sistema de chat",
                         "description": "Nesse projeto fiz um sistema de chat em tempo real para mostrar um pouco de minhas habilidades",
-                        "used": "Tecnologias utilizadas",
+                        "used": "Tecnologias",
                         "tech": [
                             {
                                 "id": 0,
@@ -229,7 +229,7 @@
                         "src": "./src/assets/images/spain-flag.png",
                         "name": "Sistema de reservas",
                         "description": "Nesse projeto fiz um sistema para que hoteis possam utilizar para ter um sistema onde consiga controlar as reservas",
-                        "used": "Tecnologias utilizadas",
+                        "used": "Tecnologias",
                         "tech": [
                             {
                                 "id": 0,

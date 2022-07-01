@@ -5,7 +5,7 @@
             "About me",
             "Projects",
             "Skills",
-            "Contact"
+            "Contact me"
         ]
     },
     {
@@ -155,7 +155,7 @@
     },
     {
         "contact": [
-            "Contact",
+            "Contact me",
             "Name",
             "Email",
             "Subject",
@@ -187,7 +187,7 @@
                         "src": "./src/assets/images/hackerhank-clone-image.png",
                         "name": "Hackerhank clone",
                         "description": "In this project I decided to clone the frontend of the hackerhank login section",
-                        "used": "Technologies used",
+                        "used": "Technologies",
                         "tech": [
                             {
                                 "id": 0,
@@ -204,7 +204,7 @@
                         "src": "./src/assets/images/eua-flag.png",
                         "name": "Chat system",
                         "description": "In this project I made a real-time chat system to show some of my skills",
-                        "used": "Technologies used",
+                        "used": "Technologies",
                         "tech": [
                             {
                                 "id": 0,
@@ -229,7 +229,7 @@
                         "src": "./src/assets/images/spain-flag.png",
                         "name": "Reservation system",
                         "description": "In this project I made a system for hotels to use to have a system where they can control reservations",
-                        "used": "Technologies used",
+                        "used": "Technologies",
                         "tech": [
                             {
                                 "id": 0,
