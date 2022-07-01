@@ -108,7 +108,46 @@
             {
                 "softSkills": [
                     {
-
+                        "id": 0,
+                        "name": "Trabalho em equipe",
+                        "src": "./src/assets/images/team-work.svg",
+                        "score": 75,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Liderança",
+                        "src": "./src/assets/images/leader.svg",
+                        "score": 70,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Boa communicação",
+                        "src": "./src/assets/images/communication.svg",
+                        "score": 80,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Empatia",
+                        "src": "./src/assets/images/empathy.svg",
+                        "score": 75,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Criatividade",
+                        "src": "./src/assets/images/creative.svg",
+                        "score": 88,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Aprendizado",
+                        "src": "./src/assets/images/learning.svg",
+                        "score": 90,
+                        "color": "#6C63FF"
                     }
                 ]
             }

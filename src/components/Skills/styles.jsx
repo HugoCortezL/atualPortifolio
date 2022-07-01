@@ -52,17 +52,23 @@ export const SkillsCarousel = styled.div`
     .skills-container{
         width: 92%;
         height: 100%;
-        #hardSkills{
+        #hardSkills, #softSkills{
             height: 100%;
             display: grid;
             align-items: center;
-            grid-template-columns: repeat(12, 21%);
             overflow-x: scroll;
             padding: 0 -10px;
             scroll-behavior: smooth;
+            cursor: grab;
             &::-webkit-scrollbar {
                 display: none;
             }
+        }
+        #softSkills{
+            grid-template-columns: repeat(6, 21%);
+        }
+        #hardSkills{
+            grid-template-columns: repeat(12, 21%);
         }
     }
     `

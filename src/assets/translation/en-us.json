@@ -108,7 +108,46 @@
             {
                 "softSkills": [
                     {
-
+                        "id": 0,
+                        "name": "Team work",
+                        "src": "./src/assets/images/team-work.svg",
+                        "score": 75,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Leadership",
+                        "src": "./src/assets/images/leader.svg",
+                        "score": 60,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Good communication",
+                        "src": "./src/assets/images/communication.svg",
+                        "score": 70,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Empathy",
+                        "src": "./src/assets/images/empathy.svg",
+                        "score": 85,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Creativity",
+                        "src": "./src/assets/images/creative.svg",
+                        "score": 70,
+                        "color": "#6C63FF"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Apprenticeship",
+                        "src": "./src/assets/images/learning.svg",
+                        "score": 45,
+                        "color": "#6C63FF"
                     }
                 ]
             }
