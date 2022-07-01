@@ -5,21 +5,6 @@ import enUsWords from '../../assets/translation/en-us.json'
 import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
 import ProgressBar from '../ProgressBar'
 
-import htmlLogo from '../../assets/images/html-logo.png'
-import cssLogo from '../../assets/images/css-logo.png'
-import typescriptLogo from '../../assets/images/typescript-logo.png'
-import reactLogo from '../../assets/images/react-logo.png'
-import pythonLogo from '../../assets/images/python-logo.png'
-import nodeLogo from '../../assets/images/node-logo.png'
-import gitLogo from '../../assets/images/git-logo.png'
-import graphqlLogo from '../../assets/images/graphql-logo.png'
-import mysqlLogo from '../../assets/images/mysql-logo.png'
-import euaFlag from '../../assets/images/eua-flag.png'
-import spainFlag from '../../assets/images/spain-flag.png'
-import brazilFlag from '../../assets/images/brazil-flag.png'
-
-
-
 export default function Skills(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
 
@@ -65,6 +50,10 @@ export default function Skills(props) {
             document.getElementById('softSkills').scrollLeft -= scroll;
         });
 
+
+        document.getElementById('hardSkills').addEventListener('mousedown', startDraggingHard, false);
+        document.getElementById('hardSkills').addEventListener('mouseup', stopDraggingHard, false);
+        document.getElementById('hardSkills').addEventListener('mouseleave', stopDraggingHard, false);
 
         document.getElementById('softSkills').addEventListener('mousedown', startDraggingSoft, false);
         document.getElementById('softSkills').addEventListener('mouseup', stopDraggingSoft, false);
