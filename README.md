@@ -36,7 +36,7 @@ For this project to work, you will need some tools:
  
 ```bash
 # Clone the repository
-$ git clone https://github.com/HugoCortezL/atualPortifolio
+$ git clone https://github.com/HugoCortezL/atualPortifolio.git
  
 # Go to folder
 $ cd atualPortifolio
