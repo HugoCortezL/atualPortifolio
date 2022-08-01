@@ -35,7 +35,7 @@ export default function AboutMe(props) {
                     </div>
                     <div>
                         <IoMdPin/>
-                        <a href="https://www.google.com/maps/place/Recife/" target="_blank">Recife, PE - {languageUsage[4].aboutMe[9]}</a>
+                        <a href="https://www.google.com/maps/place/Recife/" target="_blank">Recife, PE - {languageUsage[4].aboutMe[8]}</a>
                     </div>
                 </div>
             </div>

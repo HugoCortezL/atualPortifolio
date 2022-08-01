@@ -166,14 +166,13 @@
     {
         "aboutMe": [
             "About me",
-            "Hello, welcome to my website. I am a software developer and an eternal programming student. Currently I focus my studies on React, Nodejs, MySQL and GraphQL. I have more than a year working in software development. I am always looking for new challenges to evolve personally and professionally.",
+            "I'm a full stack developer passionate about the area and a lifelong learner. I really like to challenge myself with new projects and features to further increase my knowledge. Currently i've been focusing my studies on React, Nodejs and GraphQL and I've been working as a software developer for over a year.",
             "Guitar",
             "Football",
             "Study",
             "Cook",
             "Movies / Shows",
             "Friends / Family",
-            "Based on: ",
             "Brazil"
         ]
     },
@@ -193,11 +192,11 @@
                         "tech": [
                             {
                                 "id": 0,
-                                "name": "Javascript"
+                                "name": "React"
                             },
                             {
                                 "id": 1,
-                                "name": "React"
+                                "name": "Javascript"
                             }
                         ]
                     },
@@ -235,11 +234,11 @@
                             },
                             {
                                 "id": 1,
-                                "name": "API Rest"
+                                "name": "Typescript"
                             },
                             {
                                 "id": 2,
-                                "name": "Typescript"
+                                "name": "API Rest"
                             }
                         ]
                     }

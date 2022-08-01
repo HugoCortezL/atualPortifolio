@@ -166,14 +166,13 @@
     {
         "aboutMe": [
             "Sobre Mim",
-            "Olá, bem vindo(a) ao meu site. Sou desenvolvedor de software e um eterno estudande de programação. Atualmente foco meus estudos em React, Nodejs, MySQL e GraphQL. Tenho mais de um ano atuando em desenvolvimento de software. Estou sempre buscando novos desafios para evoluir pessoalmente e profissionalmente.",
-            "Violao",
+            "Sou um desenvolvedor full stack apaixonado pela área e um eterno aprendiz. Gosto muito de me desafiar com novos projetos e funcionalidades para aumentar ainda mais o meu conhecimento. Atualmente venho focando meus estudos em React, Nodejs e GraphQL e tenho mais de um ano de atuação como desenvolvedor de software.",
+            "Violão",
             "Futebol",
             "Estudar",
             "Cozinhar",
             "Filmes / Series",
             "Amigos / Família",
-            "Morando: ",
             "Brasil"
         ]
     },
@@ -193,11 +192,11 @@
                         "tech": [
                             {
                                 "id": 0,
-                                "name": "Javascript"
+                                "name": "React"
                             },
                             {
                                 "id": 1,
-                                "name": "React"
+                                "name": "Javascript"
                             }
                         ]
                     },
@@ -235,11 +234,11 @@
                             },
                             {
                                 "id": 1,
-                                "name": "API Rest"
+                                "name": "Typescript"
                             },
                             {
                                 "id": 2,
-                                "name": "Typescript"
+                                "name": "API Rest"
                             }
                         ]
                     }
