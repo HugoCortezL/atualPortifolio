@@ -2,6 +2,7 @@ import {AboutMeContainer, HobbieContainer} from './styles'
 import {useState, useEffect} from 'react'
 import ptBrWords from '../../assets/translation/pt-br.json'
 import enUsWords from '../../assets/translation/en-us.json'
+import {IoIosPaper, IoMdPin} from 'react-icons/io'
 
 export default function AboutMe(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
@@ -22,12 +23,21 @@ export default function AboutMe(props) {
         <AboutMeContainer darkMode={props.darkMode} id="about-me">
             <div className='header'>
                 <h2>{languageUsage[4].aboutMe[0]}</h2>
-                <a href={downloadLink} target="_blank">Download CV</a>
             </div>
             <div className='about'>
                 <p>
-                {languageUsage[4].aboutMe[1]}
+                    {languageUsage[4].aboutMe[1]}
                 </p>
+                <div className='links'>
+                    <div>
+                        <IoIosPaper/>
+                        <a href={downloadLink} target="_blank">Download CV</a>
+                    </div>
+                    <div>
+                        <IoMdPin/>
+                        <a href="https://www.google.com/maps/place/Recife/" target="_blank">Recife, PE - {languageUsage[4].aboutMe[9]}</a>
+                    </div>
+                </div>
             </div>
             <div className='hobbies'>
                 <h3>Hobbies</h3>
@@ -51,10 +61,6 @@ export default function AboutMe(props) {
                         {languageUsage[4].aboutMe[7]}
                     </HobbieContainer>
                 </div>
-            </div>
-            <div className='based'>
-                {languageUsage[4].aboutMe[8]}
-                <a href="https://www.google.com/maps/place/Recife/" target="_blank">Recife, PE - {languageUsage[4].aboutMe[9]}</a>
             </div>
 
         </AboutMeContainer>

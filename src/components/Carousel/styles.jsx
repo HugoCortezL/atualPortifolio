@@ -1,8 +1,12 @@
 import styled from 'styled-components'
 
 export const CarouselContainer = styled.div`
-    width: 80%;
-    height: 70%;
+    @media (min-width: 1000px) {
+        width: 80%;
+        height: 70%;
+    }
+    width: 99%;
+    height: 60%;
     margin-top: 20px;
     display: flex;
     align-items: flex-end;
@@ -11,35 +15,54 @@ export const CarouselContainer = styled.div`
 `
 
 export const Principal = styled.div`
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 50%), ${props => `url(${props.background})`};
+    @media (min-width: 1000px) {
+        background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 50%), ${props => `url(${props.background})`};
+    }
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 75%), ${props => `url(${props.background})`};
     background-size: cover;
     background-position: center center;
-    div.text{
-        height: 100%;
-        width: 30%;
-        margin-left: 30px;
-        color: #F3F7F7;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-evenly;
-        h3{
-            font-size: 25px;
-            margin-bottom: 5px;
-        }
-        div.name{
-            p{
-                font-size: 16px;
+    width: 100%;
+    height: 100%;
+    a{
+        text-decoration: none;
+        div.text{
+            height: 100%;
+            @media (min-width: 1000px) {
+                width: 30%;
+                margin-left: 30px;
             }
-        }
-        div.tech{
-            ul{
-                list-style: none;
-                li{
-                    margin: 5px 0;
-                    font-size: 16px;
+            width: 50%;
+            margin-left: 10px;
+            color: #F3F7F7;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            h3{
+                @media (min-width: 1000px) {
+                    font-size: 25px;
+                }
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            div.name{
+                p{
+                    @media (min-width: 1000px) {
+                        font-size: 16px;
+                    }
+                    font-size: 13px;
+                }
+            }
+            div.tech{
+                ul{
+                    list-style: none;
+                    li{
+                        margin: 5px 0;
+                        @media (min-width: 1000px) {
+                            font-size: 16px;
+                        }
+                        font-size: 13px;
+                    }
                 }
             }
         }

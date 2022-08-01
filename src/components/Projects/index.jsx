@@ -5,10 +5,6 @@ import enUsWords from '../../assets/translation/en-us.json'
 
 import Carousel from '../Carousel'
 
-import brFlag from '../../assets/images/brazil-flag.png'
-import usaFlag from '../../assets/images/eua-flag.png'
-import spainFlag from '../../assets/images/spain-flag.png'
-
 export default function Projects(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
 

@@ -6,7 +6,6 @@ export const ProjectsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
     z-index: 100;
     h2{
         font-size: 30px;

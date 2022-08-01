@@ -22,10 +22,7 @@ export const AboutMeContainer = styled.div`
             h2{
                 font-size: 30px;
             }
-            a{
-                margin: 0  0 10px 5px;
-                color: #5CB9F2;
-            }
+            
         }
         &.about{
             @media (min-width: 1000px) {
@@ -33,6 +30,21 @@ export const AboutMeContainer = styled.div`
             }
             font-size: 15px;
             margin: 15px 0;
+            a{
+                font-size: 0.7em;
+                margin-left: 10px;
+                color: #5CB9F2;
+            }
+            & .links{
+                display: flex;
+                flex-direction: column;
+                margin: 15px 0;
+                div{
+                    display: flex;
+                    align-items: center;
+                    margin: 5px 0;
+                }
+            }
         }
         &.hobbies{
             h3{

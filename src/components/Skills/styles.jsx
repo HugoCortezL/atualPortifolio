@@ -28,7 +28,13 @@ export const SkillsCarousel = styled.div`
     align-items: center;
     justify-content: center;
     .options{
-        width: 100%;
+        width: 120%;
+        @media (min-width: 700px) {
+            width: 105%;
+        }
+        @media (min-width: 1000px) {
+            width: 100%;
+        }
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -65,10 +71,22 @@ export const SkillsCarousel = styled.div`
             }
         }
         #softSkills{
-            grid-template-columns: repeat(6, 21%);
+            grid-template-columns: repeat(6, 70%);
+            @media (min-width: 700px) {
+                grid-template-columns: repeat(6, 50%);
+            }
+            @media (min-width: 1000px) {
+                grid-template-columns: repeat(6, 21%);
+            }
         }
         #hardSkills{
-            grid-template-columns: repeat(12, 21%);
+            grid-template-columns: repeat(12, 70%);
+            @media (min-width: 700px) {
+                grid-template-columns: repeat(12, 50%);
+            }
+            @media (min-width: 1000px) {
+                grid-template-columns: repeat(12, 21%);
+            }
         }
     }
     `

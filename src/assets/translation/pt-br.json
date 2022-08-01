@@ -65,7 +65,7 @@
                         "id": 6,
                         "name": "MySQL",
                         "src": "./src/assets/images/mysql-logo.png",
-                        "score": 72,
+                        "score": 70,
                         "color": "#F29111"
                     },
                     {
@@ -86,14 +86,14 @@
                         "id": 9,
                         "name": "Inglês",
                         "src": "./src/assets/images/eua-flag.png",
-                        "score": 75,
+                        "score": 70,
                         "color": "#C60C30"
                     },
                     {
                         "id": 10,
-                        "name": "Portugês",
+                        "name": "Português",
                         "src": "./src/assets/images/brazil-flag.png",
-                        "score": 75,
+                        "score": 100,
                         "color": "#009C3B"
                     },
                     {
@@ -111,19 +111,19 @@
                         "id": 0,
                         "name": "Trabalho em equipe",
                         "src": "./src/assets/images/team-work.svg",
-                        "score": 75,
+                        "score": 80,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 1,
                         "name": "Liderança",
                         "src": "./src/assets/images/leader.svg",
-                        "score": 70,
+                        "score": 65,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 2,
-                        "name": "Boa communicação",
+                        "name": "Comunicação",
                         "src": "./src/assets/images/communication.svg",
                         "score": 80,
                         "color": "#6C63FF"
@@ -132,14 +132,14 @@
                         "id": 3,
                         "name": "Empatia",
                         "src": "./src/assets/images/empathy.svg",
-                        "score": 75,
+                        "score": 85,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 4,
                         "name": "Criatividade",
                         "src": "./src/assets/images/creative.svg",
-                        "score": 88,
+                        "score": 85,
                         "color": "#6C63FF"
                     },
                     {
@@ -185,6 +185,8 @@
                     {
                         "key": 0,
                         "src": "./src/assets/images/hackerhank-clone-image.png",
+                        "github": "https://github.com/HugoCortezL/hackerhank-clone",
+                        "title": "Abri no GitHub",
                         "name": "Clone do hackerhank",
                         "description": "Nesse projeto decidi fazer um clone do frontend da parte de login do hackerhank",
                         "used": "Tecnologias",
@@ -202,8 +204,10 @@
                     {
                         "key": 1,
                         "src": "./src/assets/images/eua-flag.png",
-                        "name": "Sistema de chat",
-                        "description": "Nesse projeto fiz um sistema de chat em tempo real para mostrar um pouco de minhas habilidades",
+                        "github": "https://github.com/HugoCortezL/credit-card-creation",
+                        "title": "Abri no GitHub",
+                        "name": "Criação de cartão de crédito",
+                        "description": "Nesse projeto fiz o front-end para criação de um cartão de credito com animação",
                         "used": "Tecnologias",
                         "tech": [
                             {
@@ -212,23 +216,17 @@
                             },
                             {
                                 "id": 1,
-                                "name": "Firebase"
-                            },
-                            {
-                                "id": 2,
-                                "name": "GraphQL"
-                            },
-                            {
-                                "id": 3,
-                                "name": "NodeJs"
+                                "name": "Typescript"
                             }
                         ]
                     },
                     {
                         "key": 2,
                         "src": "./src/assets/images/spain-flag.png",
-                        "name": "Sistema de reservas",
-                        "description": "Nesse projeto fiz um sistema para que hoteis possam utilizar para ter um sistema onde consiga controlar as reservas",
+                        "github": "https://github.com/HugoCortezL/pokedex",
+                        "title": "Abri no GitHub",
+                        "name": "Pokedex",
+                        "description": "Nesse projeto criei uma pokedex utilizando a API publica do pokemon",
                         "used": "Tecnologias",
                         "tech": [
                             {
@@ -237,11 +235,11 @@
                             },
                             {
                                 "id": 1,
-                                "name": "NodeJs"
+                                "name": "API Rest"
                             },
                             {
                                 "id": 2,
-                                "name": "MySQL"
+                                "name": "Typescript"
                             }
                         ]
                     }

@@ -65,7 +65,7 @@
                         "id": 6,
                         "name": "MySQL",
                         "src": "./src/assets/images/mysql-logo.png",
-                        "score": 72,
+                        "score": 70,
                         "color": "#F29111"
                     },
                     {
@@ -86,14 +86,14 @@
                         "id": 9,
                         "name": "English",
                         "src": "./src/assets/images/eua-flag.png",
-                        "score": 75,
+                        "score": 70,
                         "color": "#C60C30"
                     },
                     {
                         "id": 10,
                         "name": "Portuguese",
                         "src": "./src/assets/images/brazil-flag.png",
-                        "score": 75,
+                        "score": 100,
                         "color": "#009C3B"
                     },
                     {
@@ -111,21 +111,21 @@
                         "id": 0,
                         "name": "Team work",
                         "src": "./src/assets/images/team-work.svg",
-                        "score": 75,
+                        "score": 80,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 1,
                         "name": "Leadership",
                         "src": "./src/assets/images/leader.svg",
-                        "score": 60,
+                        "score": 65,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 2,
-                        "name": "Good communication",
+                        "name": "Communication",
                         "src": "./src/assets/images/communication.svg",
-                        "score": 70,
+                        "score": 80,
                         "color": "#6C63FF"
                     },
                     {
@@ -139,14 +139,14 @@
                         "id": 4,
                         "name": "Creativity",
                         "src": "./src/assets/images/creative.svg",
-                        "score": 70,
+                        "score": 85,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 5,
                         "name": "Apprenticeship",
                         "src": "./src/assets/images/learning.svg",
-                        "score": 45,
+                        "score": 90,
                         "color": "#6C63FF"
                     }
                 ]
@@ -185,6 +185,8 @@
                     {
                         "key": 0,
                         "src": "./src/assets/images/hackerhank-clone-image.png",
+                        "github": "https://github.com/HugoCortezL/hackerhank-clone",
+                        "title": "Open on GitHub",
                         "name": "Hackerhank clone",
                         "description": "In this project I decided to clone the frontend of the hackerhank login section",
                         "used": "Technologies",
@@ -202,8 +204,10 @@
                     {
                         "key": 1,
                         "src": "./src/assets/images/eua-flag.png",
-                        "name": "Chat system",
-                        "description": "In this project I made a real-time chat system to show some of my skills",
+                        "github": "https://github.com/HugoCortezL/credit-card-creation",
+                        "title": "Open on GitHub",
+                        "name": "Credit Card Creation",
+                        "description": "In this project I made the front-end to create a credit card with animation",
                         "used": "Technologies",
                         "tech": [
                             {
@@ -212,23 +216,17 @@
                             },
                             {
                                 "id": 1,
-                                "name": "Firebase"
-                            },
-                            {
-                                "id": 2,
-                                "name": "GraphQL"
-                            },
-                            {
-                                "id": 3,
-                                "name": "NodeJs"
+                                "name": "Typescript"
                             }
                         ]
                     },
                     {
                         "key": 2,
                         "src": "./src/assets/images/spain-flag.png",
-                        "name": "Reservation system",
-                        "description": "In this project I made a system for hotels to use to have a system where they can control reservations",
+                        "github": "https://github.com/HugoCortezL/pokedex",
+                        "title": "Open on GitHub",
+                        "name": "Pokedex",
+                        "description": "In this project I created a pokedex using the pokemon public API",
                         "used": "Technologies",
                         "tech": [
                             {
@@ -237,11 +235,11 @@
                             },
                             {
                                 "id": 1,
-                                "name": "NodeJs"
+                                "name": "API Rest"
                             },
                             {
                                 "id": 2,
-                                "name": "MySQL"
+                                "name": "Typescript"
                             }
                         ]
                     }

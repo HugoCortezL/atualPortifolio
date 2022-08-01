@@ -13,7 +13,10 @@ export const ContactContainer = styled.div`
         transition: all 0.5s;
     }
     form{
-        width: 70vw;
+        width: 90vw;
+        @media (min-width: 700px) {
+            width: 70vw;
+        }
         height: 70vh;   
         background-color: ${props => props.darkMode ? "#000000" : "#FFFFFF"};
         border-radius: 10px;
