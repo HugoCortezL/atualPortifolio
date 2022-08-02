@@ -71,7 +71,7 @@
                     {
                         "id": 7,
                         "name": "HTML",
-                        "src": "./src/assets/images/html-logo.png",
+                        "src": "https://github.com/HugoCortezL/hugocortezl.github.io/blob/main/src/assets/images/html-logo.png",
                         "score": 95,
                         "color": "#FF5733"
                     },
