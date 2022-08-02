@@ -30,6 +30,9 @@ export const AboutMeContainer = styled.div`
             }
             font-size: 15px;
             margin: 15px 0;
+            & > p {
+                text-align: justify;
+            }
             a{
                 font-size: 0.7em;
                 margin-left: 10px;
