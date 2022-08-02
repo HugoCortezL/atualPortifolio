@@ -5,6 +5,8 @@ import enUsWords from '../../assets/translation/en-us.json'
 import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
 import ProgressBar from '../ProgressBar'
 
+import HTMLImage from '../../assets/images/html-logo.png'
+
 export default function Skills(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
 
