@@ -221,7 +221,7 @@
                     },
                     {
                         "key": 2,
-                        "src": "./src/assets/images/spain-flag.png",
+                        "src": "./src/assets/images/pokedex-image.png",
                         "github": "https://github.com/HugoCortezL/pokedex",
                         "title": "Abri no GitHub",
                         "name": "Pokedex",
