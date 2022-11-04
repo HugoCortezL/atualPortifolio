@@ -19,6 +19,9 @@ export const HorizontalCarousel = styled.div`
     h2{
         font-size: 30px;
     }
+    &:last-child{
+        margin-top: 20px;
+    }
 `
 
 export const SkillsCarousel = styled.div`
