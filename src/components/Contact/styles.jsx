@@ -37,8 +37,8 @@ export const ContactContainer = styled.div`
             input[type="text"], input[type="email"], textarea{
                 border: 1px solid ${props => props.darkMode ? "#F3F7F7" : "#0D0D0D"};
                 color: ${props => props.darkMode ? "#F3F7F7" : "#0D0D0D"};
-                font-size: 20px;
-                padding: 5px 10px;
+                font-size: 15px;
+                padding: 8px 10px;
                 border-radius: 5px;
                 background-color: transparent;
                 width: 75vw;
