@@ -41,7 +41,7 @@ export const ContactContainer = styled.div`
                 padding: 5px 10px;
                 border-radius: 5px;
                 background-color: transparent;
-                width: 60vw;
+                width: 75vw;
                 transition: all 0.5s;
                 @media (min-width: 1000px) {
                     width: 30vw;
