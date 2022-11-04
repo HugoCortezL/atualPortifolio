@@ -165,6 +165,36 @@
                 "Items": [
                     {
                         "key": 0,
+                        "github": "https://github.com/HugoCortezL/todo-app-frontend",
+                        "title": "Open on GitHub",
+                        "name": "Todo App",
+                        "description": "I created this project that works for a user to create several to-do lists to control their activities.",
+                        "used": "Technologies",
+                        "tech": [
+                            {
+                                "id": 0,
+                                "name": "React"
+                            },
+                            {
+                                "id": 1,
+                                "name": "GraphQl"
+                            },
+                            {
+                                "id": 2,
+                                "name": "Typescript"
+                            },
+                            {
+                                "id": 3,
+                                "name": "Node.js"
+                            },
+                            {
+                                "id": 4,
+                                "name": "MongoDB"
+                            }
+                        ]
+                    },
+                    {
+                        "key": 1,
                         "github": "https://github.com/HugoCortezL/hackerhank-clone",
                         "title": "Open on GitHub",
                         "name": "Hackerhank clone",
@@ -178,24 +208,6 @@
                             {
                                 "id": 1,
                                 "name": "Javascript"
-                            }
-                        ]
-                    },
-                    {
-                        "key": 1,
-                        "github": "https://github.com/HugoCortezL/credit-card-creation",
-                        "title": "Open on GitHub",
-                        "name": "Credit Card Creation",
-                        "description": "In this project I made the front-end to create a credit card with animation",
-                        "used": "Technologies",
-                        "tech": [
-                            {
-                                "id": 0,
-                                "name": "React"
-                            },
-                            {
-                                "id": 1,
-                                "name": "Typescript"
                             }
                         ]
                     },

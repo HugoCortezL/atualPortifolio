@@ -165,6 +165,36 @@
                 "Items": [
                     {
                         "key": 0,
+                        "github": "https://github.com/HugoCortezL/todo-app-frontend",
+                        "title": "Abri no GitHub",
+                        "name": "Todo App",
+                        "description": "Criei este projeto que funciona para um usuario criar varias listas de afazeres para controlar suas atividades.",
+                        "used": "Tecnologias",
+                        "tech": [
+                            {
+                                "id": 0,
+                                "name": "React"
+                            },
+                            {
+                                "id": 1,
+                                "name": "GraphQl"
+                            },
+                            {
+                                "id": 2,
+                                "name": "Typescript"
+                            },
+                            {
+                                "id": 3,
+                                "name": "Node.js"
+                            },
+                            {
+                                "id": 4,
+                                "name": "MongoDB"
+                            }
+                        ]
+                    },
+                    {
+                        "key": 1,
                         "github": "https://github.com/HugoCortezL/hackerhank-clone",
                         "title": "Abri no GitHub",
                         "name": "Clone do hackerhank",
@@ -178,24 +208,6 @@
                             {
                                 "id": 1,
                                 "name": "Javascript"
-                            }
-                        ]
-                    },
-                    {
-                        "key": 1,
-                        "github": "https://github.com/HugoCortezL/credit-card-creation",
-                        "title": "Abri no GitHub",
-                        "name": "Criação de cartão de crédito",
-                        "description": "Nesse projeto fiz o front-end para criação de um cartão de credito com animação",
-                        "used": "Tecnologias",
-                        "tech": [
-                            {
-                                "id": 0,
-                                "name": "React"
-                            },
-                            {
-                                "id": 1,
-                                "name": "Typescript"
                             }
                         ]
                     },

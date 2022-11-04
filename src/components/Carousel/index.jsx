@@ -1,8 +1,8 @@
 import {CarouselContainer, Principal, Items, Item} from './styles'
 import {useState, useEffect} from 'react'
 
+import todoAppImage from '../../assets/images/todoapp-image.png'
 import hackerhankImage from '../../assets/images/hackerhank-clone-image.png'
-import creaditCardImage from '../../assets/images/credit-card-creation-image.png'
 import pokedexImage from '../../assets/images/pokedex-image.png'
 
 
@@ -11,7 +11,7 @@ export default function Carousel(props) {
     const [items, setItems] = useState(props.data)
     let tech = "Tecnologias utilizadas"
 
-    const itemsImage = [hackerhankImage, creaditCardImage, pokedexImage]
+    const itemsImage = [todoAppImage, hackerhankImage, pokedexImage]
     
     useEffect(() => {
         setItems(props.data)
