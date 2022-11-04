@@ -1,10 +1,17 @@
 import {CarouselContainer, Principal, Items, Item} from './styles'
 import {useState, useEffect} from 'react'
 
+import hackerhankImage from '../../assets/images/hackerhank-clone-image.png'
+import creaditCardImage from '../../assets/images/credit-card-creation-image.png'
+import pokedexImage from '../../assets/images/pokedex-image.png'
+
+
 export default function Carousel(props) {
     const [itemToShow, setItemToShow] = useState(0)
     const [items, setItems] = useState(props.data)
-    var tech = "Tecnologias utilizadas"
+    let tech = "Tecnologias utilizadas"
+
+    const itemsImage = [hackerhankImage, creaditCardImage, pokedexImage]
     
     useEffect(() => {
         setItems(props.data)
@@ -15,8 +22,8 @@ export default function Carousel(props) {
         }
     }, props.data)
 
-    const handlerClick = (id) => {
-        setItemToShow(id)
+    const handlerClick = (key) => {
+        setItemToShow(key)
     }
 
     useEffect(() => {
@@ -37,7 +44,7 @@ export default function Carousel(props) {
 
     return(
         <CarouselContainer darkMode={props.darkMode}>
-            <Principal background={items[itemToShow].src}>
+            <Principal background={itemsImage[itemToShow]}>
                 <a href={items[itemToShow].github} target="_blank" title={items[itemToShow].title}>
                     <div className='text'>
                         <div className='name'>
@@ -54,9 +61,9 @@ export default function Carousel(props) {
                 </a>
             </Principal>
             <Items>
-                {items.map(item => <Item 
+                {items.map((item, index) => <Item 
                                         key={item.key} 
-                                        background={item.src} 
+                                        background={itemsImage[index]} 
                                         onClick={() => handlerClick(item.key)} 
                                         className={itemToShow == item.key ? 'active' : ''}
                             >
