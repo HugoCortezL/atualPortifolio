@@ -1,23 +1,25 @@
-import {CarouselContainer, Principal, Items, Item} from './styles'
-import {useState, useEffect} from 'react'
+import { CarouselContainer, Principal, Items, Item } from './styles'
+import { useState, useEffect, useContext } from 'react'
 
 import todoAppImage from '../../assets/images/todoapp-image.png'
 import hackerhankImage from '../../assets/images/hackerhank-clone-image.png'
 import pokedexImage from '../../assets/images/pokedex-image.png'
+import { ConfigContext } from '../../pages/Home'
 
 
 export default function Carousel(props) {
     const [itemToShow, setItemToShow] = useState(0)
     const [items, setItems] = useState(props.data)
     let tech = "Tecnologias utilizadas"
+    const { darkMode } = useContext(ConfigContext)
 
     const itemsImage = [todoAppImage, hackerhankImage, pokedexImage]
-    
+
     useEffect(() => {
         setItems(props.data)
-        if(tech === "Tecnologias utilizadas"){
+        if (tech === "Tecnologias utilizadas") {
             tech = "Technologies used"
-        }else{
+        } else {
             tech = "Tecnologias utilizadas"
         }
     }, props.data)
@@ -28,9 +30,9 @@ export default function Carousel(props) {
 
     useEffect(() => {
         const autoChangeItem = setInterval(() => {
-            if (itemToShow + 1 == items.length){
+            if (itemToShow + 1 == items.length) {
                 setItemToShow(0)
-            }else{
+            } else {
                 setItemToShow(itemToShow + 1)
             }
         }, 8000);
@@ -42,8 +44,8 @@ export default function Carousel(props) {
     }, [])
 
 
-    return(
-        <CarouselContainer darkMode={props.darkMode}>
+    return (
+        <CarouselContainer darkMode={darkMode}>
             <Principal background={itemsImage[itemToShow]}>
                 <a href={items[itemToShow].github} target="_blank" title={items[itemToShow].title}>
                     <div className='text'>
@@ -61,14 +63,14 @@ export default function Carousel(props) {
                 </a>
             </Principal>
             <Items>
-                {items.map((item, index) => <Item 
-                                        key={item.key} 
-                                        background={itemsImage[index]} 
-                                        onClick={() => handlerClick(item.key)} 
-                                        className={itemToShow == item.key ? 'active' : ''}
-                            >
-                                <div className="timer"></div>
-                            </Item>)}
+                {items.map((item, index) => <Item
+                    key={item.key}
+                    background={itemsImage[index]}
+                    onClick={() => handlerClick(item.key)}
+                    className={itemToShow == item.key ? 'active' : ''}
+                >
+                    <div className="timer"></div>
+                </Item>)}
             </Items>
         </CarouselContainer>
     )

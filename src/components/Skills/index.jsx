@@ -1,9 +1,10 @@
-import {SkillsContainer, Content, HorizontalCarousel, SkillsCarousel, Skill} from './styles'
-import {useState, useEffect} from 'react'
+import { SkillsContainer, Content, HorizontalCarousel, SkillsCarousel, Skill } from './styles'
+import { useState, useEffect, useContext } from 'react'
 import ptBrWords from '../../assets/translation/pt-br.json'
 import enUsWords from '../../assets/translation/en-us.json'
-import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 import ProgressBar from '../ProgressBar'
+import { ConfigContext } from '../../pages/Home'
 
 // This import is only for work in vercel
 import reactLogo from '../../assets/images/react-logo.png'
@@ -28,19 +29,20 @@ import learning from '../../assets/images/learning.svg'
 
 
 
-export default function Skills(props) {
+export default function Skills() {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
+    const { language, darkMode } = useContext(ConfigContext)
 
-    try{
+    try {
         let mouseDownHard = false, mouseDownSoft = false;
         let startXHard, startXSoft;
-    
+
         let startDraggingHard = e => {
             mouseDownHard = true;
             startXHard = e.pageX - document.getElementById('hardSkills').offsetLeft;
             document.getElementById('hardSkills').style.cursor = "grabbing"
         };
-        
+
         let stopDraggingHard = event => {
             mouseDownHard = false;
             document.getElementById('hardSkills').style.cursor = "grab"
@@ -48,7 +50,7 @@ export default function Skills(props) {
 
         document.getElementById('hardSkills').addEventListener('mousemove', (e) => {
             e.preventDefault();
-            if(!mouseDownHard) { return; }
+            if (!mouseDownHard) { return; }
             const x = e.pageX - document.getElementById('hardSkills').offsetLeft;
             const scroll = x - startXHard;
             document.getElementById('hardSkills').scrollLeft -= scroll;
@@ -59,7 +61,7 @@ export default function Skills(props) {
             startXSoft = e.pageX - document.getElementById('softSkills').offsetLeft;
             document.getElementById('softSkills').style.cursor = "grabbing"
         };
-        
+
         let stopDraggingSoft = event => {
             mouseDownSoft = false;
             document.getElementById('softSkills').style.cursor = "grab"
@@ -67,7 +69,7 @@ export default function Skills(props) {
 
         document.getElementById('softSkills').addEventListener('mousemove', (e) => {
             e.preventDefault();
-            if(!mouseDownSoft) { return; }
+            if (!mouseDownSoft) { return; }
             const x = e.pageX - document.getElementById('softSkills').offsetLeft;
             const scroll = x - startXSoft;
             document.getElementById('softSkills').scrollLeft -= scroll;
@@ -82,18 +84,18 @@ export default function Skills(props) {
         document.getElementById('softSkills').addEventListener('mouseup', stopDraggingSoft, false);
         document.getElementById('softSkills').addEventListener('mouseleave', stopDraggingSoft, false);
     }
-    catch{}
+    catch { }
 
     const hardSkills = [reactLogo, nodeLogo, typescriptLogo, cssLogo, gitLogo, graphqlLogo, mysqlLogo, htmlLogo, pythonLogo, usaFlag, brFlag, spFlag]
     const softSkills = [teamWork, leader, communication, empathy, creative, learning]
 
     useEffect(() => {
-        if(props.language === 'PT-BR'){
+        if (language === 'PT-BR') {
             setLanguageUsage(ptBrWords)
-        }else{
+        } else {
             setLanguageUsage(enUsWords)
         }
-    }, [props.language])
+    }, [language])
 
     const hardSkillsForRight = () => {
         document.getElementById('hardSkills').scrollLeft += window.screen.width / 2
@@ -112,27 +114,27 @@ export default function Skills(props) {
     }
 
 
-    return(
-        <SkillsContainer darkMode={props.darkMode} id="skills">
+    return (
+        <SkillsContainer darkMode={darkMode} id="skills">
             <Content>
                 <HorizontalCarousel>
                     <h2>Hard Skills</h2>
-                    <SkillsCarousel darkMode={props.darkMode}>
+                    <SkillsCarousel darkMode={darkMode}>
                         <div className='options'>
                             <button className="left" onClick={hardSkillsForLeft}>
-                                <BsChevronLeft size={30} color={props.darkMode ? "#F3F7F7" : "#181818"}/>
+                                <BsChevronLeft size={30} color={darkMode ? "#F3F7F7" : "#181818"} />
                             </button>
                             <button className="right" onClick={hardSkillsForRight}>
-                                <BsChevronRight size={30} color={props.darkMode ? "#F3F7F7" : "#181818"}/>
+                                <BsChevronRight size={30} color={darkMode ? "#F3F7F7" : "#181818"} />
                             </button>
                         </div>
                         <div className='skills-container'>
                             <div id='hardSkills'>
                                 {
-                                    languageUsage[2].skills[1].hardSkills.map((skill, index) => <Skill darkMode={props.darkMode} key={skill.id}>
+                                    languageUsage[2].skills[1].hardSkills.map((skill, index) => <Skill darkMode={darkMode} key={skill.id}>
                                         <p>{skill.name}</p>
-                                        <img src={hardSkills[index]}/>
-                                        <ProgressBar color={skill.color} percent={skill.score}/>
+                                        <img src={hardSkills[index]} />
+                                        <ProgressBar color={skill.color} percent={skill.score} />
                                     </Skill>)
                                 }
                             </div>
@@ -141,22 +143,22 @@ export default function Skills(props) {
                 </HorizontalCarousel>
                 <HorizontalCarousel>
                     <h2>{languageUsage[2].skills[0]}</h2>
-                    <SkillsCarousel darkMode={props.darkMode}>
+                    <SkillsCarousel darkMode={darkMode}>
                         <div className='options'>
                             <button className="left" onClick={softSkillsForLeft}>
-                                <BsChevronLeft size={30} color={props.darkMode ? "#F3F7F7" : "#181818"}/>
+                                <BsChevronLeft size={30} color={darkMode ? "#F3F7F7" : "#181818"} />
                             </button>
                             <button className="right" onClick={softSkillsForRight}>
-                                <BsChevronRight size={30} color={props.darkMode ? "#F3F7F7" : "#181818"}/>
+                                <BsChevronRight size={30} color={darkMode ? "#F3F7F7" : "#181818"} />
                             </button>
                         </div>
                         <div className='skills-container'>
                             <div id='softSkills'>
                                 {
-                                    languageUsage[2].skills[2].softSkills.map((skill, index) => <Skill darkMode={props.darkMode} key={skill.id}>
+                                    languageUsage[2].skills[2].softSkills.map((skill, index) => <Skill darkMode={darkMode} key={skill.id}>
                                         <p>{skill.name}</p>
-                                        <img src={softSkills[index]}/>
-                                        <ProgressBar color={skill.color} percent={skill.score}/>
+                                        <img src={softSkills[index]} />
+                                        <ProgressBar color={skill.color} percent={skill.score} />
                                     </Skill>)
                                 }
                             </div>

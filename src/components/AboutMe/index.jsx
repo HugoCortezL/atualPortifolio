@@ -1,26 +1,28 @@
-import {AboutMeContainer, HobbieContainer} from './styles'
-import {useState, useEffect} from 'react'
+import { AboutMeContainer, HobbieContainer } from './styles'
+import { useState, useEffect, useContext } from 'react'
 import ptBrWords from '../../assets/translation/pt-br.json'
 import enUsWords from '../../assets/translation/en-us.json'
-import {IoIosPaper, IoMdPin} from 'react-icons/io'
+import { IoIosPaper, IoMdPin } from 'react-icons/io'
+import { ConfigContext } from '../../pages/Home'
 
-export default function AboutMe(props) {
+export default function AboutMe() {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
     const [downloadLink, setDownloadLink] = useState("https://drive.google.com/file/d/1fAnvjrP3c74V-HLlz4TGRAIAzYRgfQSs/view?usp=sharing")
+    const { language, darkMode } = useContext(ConfigContext)
 
     useEffect(() => {
-        if(props.language === 'PT-BR'){
+        if (language === 'PT-BR') {
             setLanguageUsage(ptBrWords)
             setDownloadLink("https://drive.google.com/file/d/1fAnvjrP3c74V-HLlz4TGRAIAzYRgfQSs/view?usp=sharing")
-        }else{
+        } else {
             setLanguageUsage(enUsWords)
             setDownloadLink("https://drive.google.com/file/d/1KJ07cvkyRUJK5SyuTKGfjgVtm7XgGJto/view?usp=sharing")
         }
-    }, [props.language])
+    }, [language])
 
-    
-    return(
-        <AboutMeContainer darkMode={props.darkMode} id="about-me">
+
+    return (
+        <AboutMeContainer darkMode={darkMode} id="about-me">
             <div className='header'>
                 <h2>{languageUsage[4].aboutMe[0]}</h2>
             </div>
@@ -30,11 +32,11 @@ export default function AboutMe(props) {
                 </p>
                 <div className='links'>
                     <div>
-                        <IoIosPaper/>
+                        <IoIosPaper />
                         <a href={downloadLink} target="_blank">Download CV</a>
                     </div>
                     <div>
-                        <IoMdPin/>
+                        <IoMdPin />
                         <a href="https://www.google.com/maps/place/Recife/" target="_blank">Recife, PE - {languageUsage[4].aboutMe[8]}</a>
                     </div>
                 </div>
@@ -42,22 +44,22 @@ export default function AboutMe(props) {
             <div className='hobbies'>
                 <h3>Hobbies</h3>
                 <div>
-                    <HobbieContainer  darkMode={props.darkMode}>
+                    <HobbieContainer darkMode={darkMode}>
                         {languageUsage[4].aboutMe[2]}
                     </HobbieContainer>
-                    <HobbieContainer darkMode={props.darkMode}>
+                    <HobbieContainer darkMode={darkMode}>
                         {languageUsage[4].aboutMe[3]}
                     </HobbieContainer>
-                    <HobbieContainer darkMode={props.darkMode}>
+                    <HobbieContainer darkMode={darkMode}>
                         {languageUsage[4].aboutMe[4]}
                     </HobbieContainer>
-                    <HobbieContainer darkMode={props.darkMode}>
+                    <HobbieContainer darkMode={darkMode}>
                         {languageUsage[4].aboutMe[5]}
                     </HobbieContainer>
-                    <HobbieContainer darkMode={props.darkMode}>
+                    <HobbieContainer darkMode={darkMode}>
                         {languageUsage[4].aboutMe[6]}
                     </HobbieContainer>
-                    <HobbieContainer darkMode={props.darkMode}>
+                    <HobbieContainer darkMode={darkMode}>
                         {languageUsage[4].aboutMe[7]}
                     </HobbieContainer>
                 </div>

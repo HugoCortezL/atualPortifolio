@@ -1,25 +1,27 @@
-import {ProjectsContainer} from './styles'
-import {useState, useEffect} from 'react'
+import { ProjectsContainer } from './styles'
+import { useState, useEffect, useContext } from 'react'
 import ptBrWords from '../../assets/translation/pt-br.json'
 import enUsWords from '../../assets/translation/en-us.json'
+import { ConfigContext } from '../../pages/Home'
 
 import Carousel from '../Carousel'
 
-export default function Projects(props) {
+export default function Projects() {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
+    const { language, darkMode } = useContext(ConfigContext)
 
     useEffect(() => {
-        if(props.language === 'PT-BR'){
+        if (language === 'PT-BR') {
             setLanguageUsage(ptBrWords)
-        }else{
+        } else {
             setLanguageUsage(enUsWords)
         }
-    }, [props.language])
-    
-    return(
-        <ProjectsContainer darkMode={props.darkMode} id="projects">
+    }, [language])
+
+    return (
+        <ProjectsContainer darkMode={darkMode} id="projects">
             <h2>{languageUsage[5].projects[0]}</h2>
-            <Carousel darkMode={props.darkMode} data={languageUsage[5].projects[1].Items}/>
+            <Carousel data={languageUsage[5].projects[1].Items} />
         </ProjectsContainer>
     )
 }
