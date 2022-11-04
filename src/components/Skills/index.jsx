@@ -4,6 +4,8 @@ import ptBrWords from '../../assets/translation/pt-br.json'
 import enUsWords from '../../assets/translation/en-us.json'
 import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
 import ProgressBar from '../ProgressBar'
+
+// This import is only for work in vercel
 import reactLogo from '../../assets/images/react-logo.png'
 import nodeLogo from '../../assets/images/node-logo.png'
 import typescriptLogo from '../../assets/images/typescript-logo.png'
@@ -16,6 +18,15 @@ import pythonLogo from '../../assets/images/python-logo.png'
 import usaFlag from '../../assets/images/eua-flag.png'
 import brFlag from '../../assets/images/brazil-flag.png'
 import spFlag from '../../assets/images/spain-flag.png'
+
+import teamWork from '../../assets/images/team-work.svg'
+import leader from '../../assets/images/leader.svg'
+import communication from '../../assets/images/communication.svg'
+import empathy from '../../assets/images/empathy.svg'
+import creative from '../../assets/images/creative.svg'
+import learning from '../../assets/images/learning.svg'
+
+
 
 export default function Skills(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
@@ -74,6 +85,7 @@ export default function Skills(props) {
     catch{}
 
     const hardSkills = [reactLogo, nodeLogo, typescriptLogo, cssLogo, gitLogo, graphqlLogo, mysqlLogo, htmlLogo, pythonLogo, usaFlag, brFlag, spFlag]
+    const softSkills = [teamWork, leader, communication, empathy, creative, learning]
 
     useEffect(() => {
         if(props.language === 'PT-BR'){
@@ -141,9 +153,9 @@ export default function Skills(props) {
                         <div className='skills-container'>
                             <div id='softSkills'>
                                 {
-                                    languageUsage[2].skills[2].softSkills.map(skill => <Skill darkMode={props.darkMode} key={skill.id}>
+                                    languageUsage[2].skills[2].softSkills.map((skill, index) => <Skill darkMode={props.darkMode} key={skill.id}>
                                         <p>{skill.name}</p>
-                                        <img src={skill.src}/>
+                                        <img src={softSkills[index]}/>
                                         <ProgressBar color={skill.color} percent={skill.score}/>
                                     </Skill>)
                                 }

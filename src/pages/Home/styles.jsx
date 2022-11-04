@@ -4,6 +4,9 @@ export const Container = styled.div`
     position: relative;
     background: ${props => props.darkMode ? "#0D0D0D" : "#F3F7F7"};
     transition: all 0.5s;
+    div.space{
+        height: 60px;
+    }
     div.config{
         padding: 0 10px;
         display: flex;

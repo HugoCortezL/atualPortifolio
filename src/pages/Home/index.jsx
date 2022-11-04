@@ -44,6 +44,7 @@ export default function Home() {
             </div>
             <SocialMedias darkMode={darkMode}/>
             <Header language={languageUsage} darkMode={darkMode}/>
+            <div className="space"></div>
             <Presentation language={languageUsage}  darkMode={darkMode}/>
             <AboutMe language={languageUsage}  darkMode={darkMode}/>
             <Projects language={languageUsage}  darkMode={darkMode}/>

@@ -22,84 +22,72 @@
                     {
                         "id": 0,
                         "name": "React",
-                        "src": "./src/assets/images/react-logo.png",
                         "score": 75,
                         "color": "#61DBFB"
                     },
                     {
                         "id": 1,
                         "name": "NodeJs",
-                        "src": "./src/assets/images/node-logo.png",
                         "score": 60,
                         "color": "#3C873A"
                     },
                     {
                         "id": 2,
                         "name": "Typescript",
-                        "src": "./src/assets/images/typescript-logo.png",
                         "score": 70,
                         "color": "#007ACC"
                     },
                     {
                         "id": 3,
                         "name": "CSS",
-                        "src": "./src/assets/images/css-logo.png",
                         "score": 85,
                         "color": "#264DE4"
                     },
                     {
                         "id": 4,
                         "name": "Git / Github",
-                        "src": "./src/assets/images/git-logo.png",
                         "score": 70,
                         "color": "#F85434"
                     },
                     {
                         "id": 5,
                         "name": "GraphQL",
-                        "src": "./src/assets/images/graphql-logo.png",
                         "score": 45,
                         "color": "#E535AB"
                     },
                     {
                         "id": 6,
                         "name": "MySQL",
-                        "src": "./src/assets/images/mysql-logo.png",
                         "score": 70,
                         "color": "#F29111"
                     },
                     {
                         "id": 7,
                         "name": "HTML",
-                        "src": "./src/assets/images/html-logo.png",
                         "score": 95,
                         "color": "#FF5733"
                     },
                     {
                         "id": 8,
                         "name": "Python",
-                        "src": "./src/assets/images/python-logo.png",
                         "score": 75,
                         "color": "#FFD43B"
                     },
                     {
                         "id": 9,
                         "name": "English",
-                        "src": "./src/assets/images/eua-flag.png",
                         "score": 70,
                         "color": "#C60C30"
                     },
                     {
                         "id": 10,
                         "name": "Portuguese",
-                        "src": "./src/assets/images/brazil-flag.png",
                         "score": 100,
                         "color": "#009C3B"
                     },
                     {
                         "id": 11,
                         "name": "Spanish",
-                        "src": "./src/assets/images/spain-flag.png",
                         "score": 75,
                         "color": "#FABD00"
                     }
@@ -110,42 +98,36 @@
                     {
                         "id": 0,
                         "name": "Team work",
-                        "src": "./src/assets/images/team-work.svg",
                         "score": 80,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 1,
                         "name": "Leadership",
-                        "src": "./src/assets/images/leader.svg",
                         "score": 65,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 2,
                         "name": "Communication",
-                        "src": "./src/assets/images/communication.svg",
                         "score": 80,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 3,
                         "name": "Empathy",
-                        "src": "./src/assets/images/empathy.svg",
                         "score": 85,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 4,
                         "name": "Creativity",
-                        "src": "./src/assets/images/creative.svg",
                         "score": 85,
                         "color": "#6C63FF"
                     },
                     {
                         "id": 5,
                         "name": "Apprenticeship",
-                        "src": "./src/assets/images/learning.svg",
                         "score": 90,
                         "color": "#6C63FF"
                     }
