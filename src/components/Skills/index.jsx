@@ -4,6 +4,18 @@ import ptBrWords from '../../assets/translation/pt-br.json'
 import enUsWords from '../../assets/translation/en-us.json'
 import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
 import ProgressBar from '../ProgressBar'
+import reactLogo from '../../assets/images/react-logo.png'
+import nodeLogo from '../../assets/images/node-logo.png'
+import typescriptLogo from '../../assets/images/typescript-logo.png'
+import cssLogo from '../../assets/images/css-logo.png'
+import gitLogo from '../../assets/images/git-logo.png'
+import graphqlLogo from '../../assets/images/graphql-logo.png'
+import mysqlLogo from '../../assets/images/mysql-logo.png'
+import htmlLogo from '../../assets/images/html-logo.png'
+import pythonLogo from '../../assets/images/python-logo.png'
+import usaFlag from '../../assets/images/eua-flag.png'
+import brFlag from '../../assets/images/brazil-flag.png'
+import spFlag from '../../assets/images/spain-flag.png'
 
 export default function Skills(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
@@ -61,6 +73,8 @@ export default function Skills(props) {
     }
     catch{}
 
+    const hardSkills = [reactLogo, nodeLogo, typescriptLogo, cssLogo, gitLogo, graphqlLogo, mysqlLogo, htmlLogo, pythonLogo, usaFlag, brFlag, spFlag]
+
     useEffect(() => {
         if(props.language === 'PT-BR'){
             setLanguageUsage(ptBrWords)
@@ -103,9 +117,9 @@ export default function Skills(props) {
                         <div className='skills-container'>
                             <div id='hardSkills'>
                                 {
-                                    languageUsage[2].skills[1].hardSkills.map(skill => <Skill darkMode={props.darkMode} key={skill.id}>
+                                    languageUsage[2].skills[1].hardSkills.map((skill, index) => <Skill darkMode={props.darkMode} key={skill.id}>
                                         <p>{skill.name}</p>
-                                        <img src={skill.src}/>
+                                        <img src={hardSkills[index]}/>
                                         <ProgressBar color={skill.color} percent={skill.score}/>
                                     </Skill>)
                                 }
