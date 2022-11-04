@@ -6,15 +6,15 @@ import {IoIosPaper, IoMdPin} from 'react-icons/io'
 
 export default function AboutMe(props) {
     const [languageUsage, setLanguageUsage] = useState(ptBrWords)
-    const [downloadLink, setDownloadLink] = useState("https://drive.google.com/file/d/1EtxSwlVjeABhXYsWtD83rHsrXppMS0lC/view?usp=sharing")
+    const [downloadLink, setDownloadLink] = useState("https://drive.google.com/file/d/1fAnvjrP3c74V-HLlz4TGRAIAzYRgfQSs/view?usp=sharing")
 
     useEffect(() => {
         if(props.language === 'PT-BR'){
             setLanguageUsage(ptBrWords)
-            setDownloadLink("https://drive.google.com/file/d/1EtxSwlVjeABhXYsWtD83rHsrXppMS0lC/view?usp=sharing")
+            setDownloadLink("https://drive.google.com/file/d/1fAnvjrP3c74V-HLlz4TGRAIAzYRgfQSs/view?usp=sharing")
         }else{
             setLanguageUsage(enUsWords)
-            setDownloadLink("https://drive.google.com/file/d/1WbkeZ7CMdSo-agk0QxCK_mZt9lMi_POy/view?usp=sharing")
+            setDownloadLink("https://drive.google.com/file/d/1KJ07cvkyRUJK5SyuTKGfjgVtm7XgGJto/view?usp=sharing")
         }
     }, [props.language])
 
