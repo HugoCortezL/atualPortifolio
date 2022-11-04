@@ -1,23 +1,12 @@
 import { ContactContainer } from './styles'
-import { useState, useEffect, useRef, useContext } from 'react'
-import ptBrWords from '../../assets/translation/pt-br.json'
-import enUsWords from '../../assets/translation/en-us.json'
+import { useRef, useContext } from 'react'
 import emailjs from '@emailjs/browser';
 import { ConfigContext } from '../../pages/Home'
+import { translate } from '../../utils/translate'
 
 export default function Contact() {
-    const [languageUsage, setLanguageUsage] = useState(ptBrWords)
     const form = useRef();
     const { language, darkMode } = useContext(ConfigContext)
-
-
-    useEffect(() => {
-        if (language === 'PT-BR') {
-            setLanguageUsage(ptBrWords)
-        } else {
-            setLanguageUsage(enUsWords)
-        }
-    }, [language])
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -29,26 +18,26 @@ export default function Contact() {
 
     return (
         <ContactContainer darkMode={darkMode} id="contact">
-            <h2>{languageUsage[3].contact[0]}</h2>
+            <h2>{translate(language, "Fale comigo")}</h2>
             <form ref={form} onSubmit={sendEmail}>
                 <div>
-                    <label>{languageUsage[3].contact[1]}</label>
+                    <label>{translate(language, "Nome")}</label>
                     <input type="text" name="name" />
                 </div>
                 <div>
-                    <label>{languageUsage[3].contact[2]}</label>
+                    <label>{translate(language, "Email")}</label>
                     <input type="email" name="email" />
                 </div>
                 <div>
-                    <label>{languageUsage[3].contact[3]}</label>
+                    <label>{translate(language, "Assunto")}</label>
                     <input type="text" name="subject" />
                 </div>
                 <div>
-                    <label>{languageUsage[3].contact[4]}</label>
+                    <label>{translate(language, "Mensagem")}</label>
                     <textarea type="text" name="message" />
                 </div>
                 <div className='submit'>
-                    <input type="submit" value={languageUsage[3].contact[5]} />
+                    <input type="submit" value={translate(language, "Enviar")} />
                 </div>
             </form>
         </ContactContainer>

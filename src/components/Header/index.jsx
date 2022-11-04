@@ -1,53 +1,43 @@
 import { HeaderContainer } from './styles'
 import { AiOutlineHome, AiOutlineUser, AiOutlineBulb, AiOutlineBarChart, AiOutlinePhone } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { useState, useEffect, useContext } from 'react'
-import ptBrWords from '../../assets/translation/pt-br.json'
-import enUsWords from '../../assets/translation/en-us.json'
+import { useState, useContext } from 'react'
 import { ConfigContext } from '../../pages/Home'
+import { translate } from '../../utils/translate'
 
 export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
-    const [languageUsage, setLanguageUsage] = useState(ptBrWords)
     const { language, darkMode } = useContext(ConfigContext)
-
-    useEffect(() => {
-        if (language === 'PT-BR') {
-            setLanguageUsage(ptBrWords)
-        } else {
-            setLanguageUsage(enUsWords)
-        }
-    }, [language])
 
     const headerItems =
         <ul className={showMobileMenu ? 'active' : ''}>
             <li>
                 <a href="#presentation">
-                    <AiOutlineHome size={20} /> <span>{languageUsage[0].header[0]}</span>
+                    <AiOutlineHome size={20} /> <span>{translate(language, "Apresentação")}</span>
                 </a>
             </li>
             <hr />
             <li>
                 <a href="#about-me">
-                    <AiOutlineUser size={20} /> <span>{languageUsage[0].header[1]}</span>
+                    <AiOutlineUser size={20} /> <span>{translate(language, "Sobre mim")}</span>
                 </a>
             </li>
             <hr />
             <li>
                 <a href="#projects">
-                    <AiOutlineBulb size={20} /> <span>{languageUsage[0].header[2]}</span>
+                    <AiOutlineBulb size={20} /> <span>{translate(language, "Projetos")}</span>
                 </a>
             </li>
             <hr />
             <li>
                 <a href="#skills">
-                    <AiOutlineBarChart size={20} /> <span>{languageUsage[0].header[3]}</span>
+                    <AiOutlineBarChart size={20} /> <span>{translate(language, "Habilidades")}</span>
                 </a>
             </li>
             <hr />
             <li>
                 <a href="#contact">
-                    <AiOutlinePhone size={20} /> <span>{languageUsage[0].header[4]}</span>
+                    <AiOutlinePhone size={20} /> <span>{translate(language, "Fale comigo")}</span>
                 </a>
             </li>
         </ul>

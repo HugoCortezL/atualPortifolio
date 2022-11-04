@@ -3,7 +3,6 @@ import { AiFillLinkedin, AiFillGithub, AiFillMediumCircle } from 'react-icons/ai
 import { ConfigContext } from '../../pages/Home'
 import { useContext } from 'react'
 
-
 export default function SocialMedias() {
     const { darkMode } = useContext(ConfigContext)
 

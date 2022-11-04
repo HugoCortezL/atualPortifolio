@@ -1,10 +1,10 @@
 import { SkillsContainer, Content, HorizontalCarousel, SkillsCarousel, Skill } from './styles'
-import { useState, useEffect, useContext } from 'react'
-import ptBrWords from '../../assets/translation/pt-br.json'
-import enUsWords from '../../assets/translation/en-us.json'
+import { useContext } from 'react'
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 import ProgressBar from '../ProgressBar'
 import { ConfigContext } from '../../pages/Home'
+import data from '../../utils/data.json'
+import { translate } from '../../utils/translate'
 
 // This import is only for work in vercel
 import reactLogo from '../../assets/images/react-logo.png'
@@ -30,7 +30,6 @@ import learning from '../../assets/images/learning.svg'
 
 
 export default function Skills() {
-    const [languageUsage, setLanguageUsage] = useState(ptBrWords)
     const { language, darkMode } = useContext(ConfigContext)
 
     try {
@@ -89,14 +88,6 @@ export default function Skills() {
     const hardSkills = [reactLogo, nodeLogo, typescriptLogo, cssLogo, gitLogo, graphqlLogo, mysqlLogo, htmlLogo, pythonLogo, usaFlag, brFlag, spFlag]
     const softSkills = [teamWork, leader, communication, empathy, creative, learning]
 
-    useEffect(() => {
-        if (language === 'PT-BR') {
-            setLanguageUsage(ptBrWords)
-        } else {
-            setLanguageUsage(enUsWords)
-        }
-    }, [language])
-
     const hardSkillsForRight = () => {
         document.getElementById('hardSkills').scrollLeft += window.screen.width / 2
     }
@@ -112,7 +103,6 @@ export default function Skills() {
     const softSkillsForLeft = () => {
         document.getElementById('softSkills').scrollLeft -= window.screen.width / 2
     }
-
 
     return (
         <SkillsContainer darkMode={darkMode} id="skills">
@@ -131,8 +121,10 @@ export default function Skills() {
                         <div className='skills-container'>
                             <div id='hardSkills'>
                                 {
-                                    languageUsage[2].skills[1].hardSkills.map((skill, index) => <Skill darkMode={darkMode} key={skill.id}>
-                                        <p>{skill.name}</p>
+                                    data.skills.hardSkills.map((skill, index) => <Skill darkMode={darkMode} key={skill.id}>
+                                        <p>
+                                            {translate(language, skill.name)}
+                                        </p>
                                         <img src={hardSkills[index]} />
                                         <ProgressBar color={skill.color} percent={skill.score} />
                                     </Skill>)
@@ -142,7 +134,7 @@ export default function Skills() {
                     </SkillsCarousel>
                 </HorizontalCarousel>
                 <HorizontalCarousel>
-                    <h2>{languageUsage[2].skills[0]}</h2>
+                    <h2>{translate(language, "Habilidades pessoais")}</h2>
                     <SkillsCarousel darkMode={darkMode}>
                         <div className='options'>
                             <button className="left" onClick={softSkillsForLeft}>
@@ -155,8 +147,10 @@ export default function Skills() {
                         <div className='skills-container'>
                             <div id='softSkills'>
                                 {
-                                    languageUsage[2].skills[2].softSkills.map((skill, index) => <Skill darkMode={darkMode} key={skill.id}>
-                                        <p>{skill.name}</p>
+                                    data.skills.softSkills.map((skill, index) => <Skill darkMode={darkMode} key={skill.id}>
+                                        <p>
+                                            {translate(language, skill.name)}
+                                        </p>
                                         <img src={softSkills[index]} />
                                         <ProgressBar color={skill.color} percent={skill.score} />
                                     </Skill>)

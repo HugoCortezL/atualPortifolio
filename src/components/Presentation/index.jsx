@@ -1,38 +1,28 @@
 import { PresentationContainer } from './styles'
 import myPhoto from '../../assets/images/my-photo.jpeg'
 import { AiOutlineArrowDown } from 'react-icons/ai'
-import { useState, useEffect, useContext } from 'react'
-import ptBrWords from '../../assets/translation/pt-br.json'
-import enUsWords from '../../assets/translation/en-us.json'
+import { useContext } from 'react'
 import { ConfigContext } from '../../pages/Home'
+import { translate } from '../../utils/translate'
 
 export default function Presentation() {
-    const [languageUsage, setLanguageUsage] = useState(ptBrWords)
     const { language, darkMode } = useContext(ConfigContext)
-
-    useEffect(() => {
-        if (language === 'PT-BR') {
-            setLanguageUsage(ptBrWords)
-        } else {
-            setLanguageUsage(enUsWords)
-        }
-    }, [language])
 
     return (
         <PresentationContainer darkMode={darkMode} id="presentation">
             <div className='text'>
                 <p>
-                    {languageUsage[1].presentation[0]}
+                {translate(language, "Olá, eu sou")}
                 </p>
                 <p className="my-name">
                     <span>Hugo</span> Cortez
                 </p>
                 <p className="description">
-                    {languageUsage[1].presentation[1]}
+                {translate(language, "Desenvolvedor fullstack, morando no Brasil.")}
                 </p>
                 <button>
                     <a href="#about-me">
-                        <AiOutlineArrowDown size={30} /> <span>{languageUsage[0].header[1]}</span>
+                        <AiOutlineArrowDown size={30} /> <span>{translate(language, "Sobre mim")}</span>
                     </a>
                 </button>
             </div>

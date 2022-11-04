@@ -1,43 +1,29 @@
 import { AboutMeContainer, HobbieContainer } from './styles'
-import { useState, useEffect, useContext } from 'react'
-import ptBrWords from '../../assets/translation/pt-br.json'
-import enUsWords from '../../assets/translation/en-us.json'
+import { useContext } from 'react'
 import { IoIosPaper, IoMdPin } from 'react-icons/io'
 import { ConfigContext } from '../../pages/Home'
+import { translate } from '../../utils/translate'
 
 export default function AboutMe() {
-    const [languageUsage, setLanguageUsage] = useState(ptBrWords)
-    const [downloadLink, setDownloadLink] = useState("https://drive.google.com/file/d/1fAnvjrP3c74V-HLlz4TGRAIAzYRgfQSs/view?usp=sharing")
     const { language, darkMode } = useContext(ConfigContext)
-
-    useEffect(() => {
-        if (language === 'PT-BR') {
-            setLanguageUsage(ptBrWords)
-            setDownloadLink("https://drive.google.com/file/d/1fAnvjrP3c74V-HLlz4TGRAIAzYRgfQSs/view?usp=sharing")
-        } else {
-            setLanguageUsage(enUsWords)
-            setDownloadLink("https://drive.google.com/file/d/1KJ07cvkyRUJK5SyuTKGfjgVtm7XgGJto/view?usp=sharing")
-        }
-    }, [language])
-
 
     return (
         <AboutMeContainer darkMode={darkMode} id="about-me">
             <div className='header'>
-                <h2>{languageUsage[4].aboutMe[0]}</h2>
+                <h2>{translate(language, "Sobre Mim")}</h2>
             </div>
             <div className='about'>
                 <p>
-                    {languageUsage[4].aboutMe[1]}
+                    {translate(language, "Sou um desenvolvedor full stack apaixonado pela área e um eterno aprendiz. Gosto muito de me desafiar com novos projetos e funcionalidades para aumentar ainda mais o meu conhecimento. Atualmente venho focando meus estudos em React, Nodejs e GraphQL e tenho mais de um ano de atuação como desenvolvedor de software.")}
                 </p>
                 <div className='links'>
                     <div>
                         <IoIosPaper />
-                        <a href={downloadLink} target="_blank">Download CV</a>
+                        <a href={translate(language, "https://drive.google.com/file/d/1fAnvjrP3c74V-HLlz4TGRAIAzYRgfQSs/view?usp=sharing")} target="_blank">Download CV</a>
                     </div>
                     <div>
                         <IoMdPin />
-                        <a href="https://www.google.com/maps/place/Recife/" target="_blank">Recife, PE - {languageUsage[4].aboutMe[8]}</a>
+                        <a href="https://www.google.com/maps/place/Recife/" target="_blank">Recife, PE - {translate(language, "Brasil")}</a>
                     </div>
                 </div>
             </div>
@@ -45,22 +31,22 @@ export default function AboutMe() {
                 <h3>Hobbies</h3>
                 <div>
                     <HobbieContainer darkMode={darkMode}>
-                        {languageUsage[4].aboutMe[2]}
+                        {translate(language, "Violão")}
                     </HobbieContainer>
                     <HobbieContainer darkMode={darkMode}>
-                        {languageUsage[4].aboutMe[3]}
+                        {translate(language, "Futebol")}
                     </HobbieContainer>
                     <HobbieContainer darkMode={darkMode}>
-                        {languageUsage[4].aboutMe[4]}
+                        {translate(language, "Estudar")}
                     </HobbieContainer>
                     <HobbieContainer darkMode={darkMode}>
-                        {languageUsage[4].aboutMe[5]}
+                        {translate(language, "Cozinhar")}
                     </HobbieContainer>
                     <HobbieContainer darkMode={darkMode}>
-                        {languageUsage[4].aboutMe[6]}
+                        {translate(language, "Filmes / Series")}
                     </HobbieContainer>
                     <HobbieContainer darkMode={darkMode}>
-                        {languageUsage[4].aboutMe[7]}
+                        {translate(language, "Amigos / Família")}
                     </HobbieContainer>
                 </div>
             </div>
