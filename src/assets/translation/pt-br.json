@@ -165,7 +165,6 @@
                 "Items": [
                     {
                         "key": 0,
-                        "src": "./src/assets/images/hackerhank-clone-image.png",
                         "github": "https://github.com/HugoCortezL/hackerhank-clone",
                         "title": "Abri no GitHub",
                         "name": "Clone do hackerhank",
@@ -184,7 +183,6 @@
                     },
                     {
                         "key": 1,
-                        "src": "./src/assets/images/credit-card-creation-image.png",
                         "github": "https://github.com/HugoCortezL/credit-card-creation",
                         "title": "Abri no GitHub",
                         "name": "Criação de cartão de crédito",
@@ -203,7 +201,6 @@
                     },
                     {
                         "key": 2,
-                        "src": "./src/assets/images/pokedex-image.png",
                         "github": "https://github.com/HugoCortezL/pokedex",
                         "title": "Abri no GitHub",
                         "name": "Pokedex",
