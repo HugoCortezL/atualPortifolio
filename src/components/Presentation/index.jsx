@@ -1,5 +1,5 @@
 import { PresentationContainer } from './styles'
-import myPhoto from '../../assets/images/my-photo.jpeg'
+import myPhoto from '../../assets/images/my-photo.png'
 import { AiOutlineArrowDown } from 'react-icons/ai'
 import { useContext } from 'react'
 import { ConfigContext } from '../../pages/Home'

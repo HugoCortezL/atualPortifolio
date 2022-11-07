@@ -60,7 +60,7 @@ export const PresentationContainer = styled.div`
     div.image{
         display: none;
         @media (min-width: 900px) {
-            display: inline-block;
+            display: block;
             border-radius: 50px;
             overflow: hidden;
             max-height: 80vh;
