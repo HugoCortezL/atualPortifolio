@@ -13,9 +13,9 @@ import typescriptLogo from '../../assets/images/typescript-logo.png'
 import cssLogo from '../../assets/images/css-logo.png'
 import gitLogo from '../../assets/images/git-logo.png'
 import graphqlLogo from '../../assets/images/graphql-logo.png'
+import mongoLogo from '../../assets/images/mongo-logo.png'
 import mysqlLogo from '../../assets/images/mysql-logo.png'
 import htmlLogo from '../../assets/images/html-logo.png'
-import pythonLogo from '../../assets/images/python-logo.png'
 import usaFlag from '../../assets/images/eua-flag.png'
 import brFlag from '../../assets/images/brazil-flag.png'
 import spFlag from '../../assets/images/spain-flag.png'
@@ -85,7 +85,7 @@ export default function Skills() {
     }
     catch { }
 
-    const hardSkills = [reactLogo, nodeLogo, typescriptLogo, cssLogo, gitLogo, graphqlLogo, mysqlLogo, htmlLogo, pythonLogo, usaFlag, brFlag, spFlag]
+    const hardSkills = [reactLogo, nodeLogo, typescriptLogo, cssLogo, graphqlLogo, mongoLogo, mysqlLogo, htmlLogo, gitLogo, usaFlag, brFlag, spFlag]
     const softSkills = [teamWork, leader, communication, empathy, creative, learning]
 
     const hardSkillsForRight = () => {

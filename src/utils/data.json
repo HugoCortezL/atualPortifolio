@@ -27,15 +27,15 @@
             },
             {
                 "id": 4,
-                "name": "Git / Github",
-                "score": 50,
-                "color": "#F85434"
-            },
-            {
-                "id": 5,
                 "name": "GraphQL",
                 "score": 60,
                 "color": "#E535AB"
+            },
+            {
+                "id": 5,
+                "name": "MongoDB",
+                "score": 70,
+                "color": "#4CA43C"
             },
             {
                 "id": 6,
@@ -51,9 +51,9 @@
             },
             {
                 "id": 8,
-                "name": "Python",
-                "score": 65,
-                "color": "#FFD43B"
+                "name": "Git / Github",
+                "score": 50,
+                "color": "#F85434"
             },
             {
                 "id": 9,
