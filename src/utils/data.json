@@ -28,13 +28,13 @@
             {
                 "id": 4,
                 "name": "Git / Github",
-                "score": 70,
+                "score": 50,
                 "color": "#F85434"
             },
             {
                 "id": 5,
                 "name": "GraphQL",
-                "score": 45,
+                "score": 60,
                 "color": "#E535AB"
             },
             {
@@ -52,13 +52,13 @@
             {
                 "id": 8,
                 "name": "Python",
-                "score": 75,
+                "score": 65,
                 "color": "#FFD43B"
             },
             {
                 "id": 9,
                 "name": "Inglês",
-                "score": 70,
+                "score": 65,
                 "color": "#C60C30"
             },
             {
@@ -70,7 +70,7 @@
             {
                 "id": 11,
                 "name": "Espanhol",
-                "score": 75,
+                "score": 65,
                 "color": "#FABD00"
             }
         ],
